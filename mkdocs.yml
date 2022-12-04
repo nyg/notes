@@ -1,5 +1,5 @@
 site_name: My Docs2
-site_url: https://example.com
+site_url: https://nyg.srht.site
 nav:
     - Home: index.md
     - About: lol.md
