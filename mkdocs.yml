@@ -1,6 +1,50 @@
-site_name: My Docs2
+site_name: Notes
 site_url: https://nyg.srht.site
+
+repo_name: nyg/cs-notes
+repo_url: https://git.sr.ht/~nyg/cs-notes
+
+theme:
+  name: material
+  features:
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    # - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+
 nav:
-    - Home: index.md
-    - About: lol.md
-theme: material
+  - Home: index.md
+  - Programmation:
+    - Apollo GraphQL: prog/apollo-graphql.md
+    - Python: prog/python-cheat-sheet.md
+    - SageMath: prog/sagemath.md
+    - Vaadin: prog/vaadin.md
+  - Utilities:
+    - Maven: utilities/maven.md
