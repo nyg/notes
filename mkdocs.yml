@@ -1,0 +1,6 @@
+site_name: My Docs2
+site_url: https://example.com
+nav:
+    - Home: index.md
+    - About: lol.md
+theme: material
