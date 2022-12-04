@@ -1,6 +1,6 @@
 # Nessus
 
-```bash
+```sh
 # Download link
 # https://www.tenable.com/downloads/nessus
 
@@ -23,4 +23,3 @@ dpkg --purge nessus
 /opt/nessus/sbin/nessuscli fix --reset
 /opt/nessus/sbin/nessuscli fix --reset-all
 ```
-

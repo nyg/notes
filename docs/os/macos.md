@@ -9,7 +9,7 @@
   * Local snapshots: https://support.apple.com/en-us/HT204015
   * `tmutil addexclusion`: useful to exclude .node\_modules
 
-```
+```sh
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export ICL="$HOME/Library/Mobile Documents/com~apple~CloudDocs/"

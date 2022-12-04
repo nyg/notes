@@ -81,58 +81,54 @@ Info: partion b is swap, partition c is whole disk
 * Interesting command is `relayctl show summary`.
 * `/etc/rc.conf.local` must be modified to start relayd at startup.
 * `anchor "relayd/*”` must be added in `/etc/pf.conf`.
-*   The forward IPv6 address is the local IPv4 address converted to IPv6 address:
-
-    ```
-      relay tcp6to4 {
-          listen on <ipv6 address> port 80
-          forward to 0:0:0:0:0:ffff:c0a8:65 port 8080 inet
-      }
-    ```
+* The forward IPv6 address is the local IPv4 address converted to IPv6 address:
+  ```
+  relay tcp6to4 {
+      listen on <ipv6 address> port 80
+      forward to 0:0:0:0:0:ffff:c0a8:65 port 8080 inet
+  }
+  ```
 
 ## Cron jobs
 
 * Edit cron jobs with `crontab -e`.
-*   List them with `crontab -l`.
-
-    ```
-      SHELL=/bin/sh
-      PATH=/bin:/usr/bin:/usr/local/bin
-      HOME=/var/log
-      */5 * * * * /home/user/script.sh
-    ```
+* List them with `crontab -l`.
+  ```sh
+  SHELL=/bin/sh
+  PATH=/bin:/usr/bin:/usr/local/bin
+  HOME=/var/log
+  */5 * * * * /home/user/script.sh
+  ```
 
 ## /etc/hostname.if
 
-*   Config for DHCP and IPv6
-
-    ```
-      dhcp
-      inet6 autoconf
-      inet6 alias <ipv6>
-    ```
+* Config for DHCP and IPv6
+  ```
+  dhcp
+  inet6 autoconf
+  inet6 alias <ipv6>
+  ```
 
 ## /etc/sysctl.conf
 
-*   Config for IPv6?
-
-    ```
-      net.inet6.ip6.forwarding=0
-      net.inet6.ip6.accept_rtadv=1
-    ```
+* Config for IPv6?
+  ```
+  net.inet6.ip6.forwarding=0
+  net.inet6.ip6.accept_rtadv=1
+  ```
 
 ## Mounting a USB drive
 
 Get the list of disks:
 
-```bash
+```sh
 $ sysctl hw.disknames
 hw.disknames=wd0:,cd0:,sd0:
 ```
 
 Find out which partition to mount:
 
-```bash
+```sh
 $ disklabel sd0
 # /dev/rsd0c
 type: SCSI
@@ -145,13 +141,13 @@ type: SCSI
 
 Create the mount folder:
 
-```bash
+```sh
 $ mkdir /mnt/folder
 ```
 
 Mount the drive:
 
-```bash
+```sh
 $ mount -t <fstype> /dev/sd0i /mnt/folder
 ```
 

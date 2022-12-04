@@ -17,7 +17,7 @@ OpenSSH is an implementation of the SSH protocol. It is mostly used to connect s
 
 ### Installation
 
-```shell
+```sh
 # install the OpenSSH server
 sudo apt install openssh-server
 
@@ -31,7 +31,7 @@ sudo systemctl status ssh
 
 Before disabling password-based authentication, we need to add a public key in the user's `~/.ssh/authorized_keys` file.
 
-```bash
+```sh
 ## Client
 
 # Generate a public and private key (e.g. in ~/.ssh).
@@ -59,7 +59,7 @@ for i in /etc/ssh/*.pub; do ssh-keygen -lf $i; done
 
 Now, we can update the server's configuration and reload the service.
 
-```shell
+```sh
 ## Server
 
 # Set the authentication methods to publickey in /etc/ssh/sshd_config.
@@ -74,20 +74,20 @@ sudo systemctl restart ssh # Debian
 
 #### Disable root login
 
-```shell
+```sh
 # /etc/ssh/sshd_config
 PermitRootLogin no
 ```
 
 #### Dump effective configuration
 
-```shell
+```sh
 sudo sshd -T -f /etc/ssh/sshd_config | sort
 ```
 
 #### Misc server configuration
 
-```shell
+```sh
 # /etc/ssh/sshd_config
 HostKey /etc/ssh/ssh_host_ed25519_key
 X11Forwarding no
@@ -96,7 +96,7 @@ Banner none
 
 #### RemoteCommand and RequestTTY
 
-```shell
+```sh
 # Executes a single non-interactive command and exits
 Host my-host
 	HostName localhost

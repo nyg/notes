@@ -1,6 +1,6 @@
 ## Python Cheat Sheet
 
-```python
+```py
 # int bases
 
 >>> 0b101010
@@ -34,4 +34,3 @@ b'ABCD'
 >>> b'ABCD'.hex(':')
 '41:42:43:44'
 ```
-

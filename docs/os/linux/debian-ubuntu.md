@@ -1,6 +1,6 @@
 # Debian / Ubuntu
 
-```
+```sh
 diskutil list
 diskutil unmountDisk /dev/disk2
 

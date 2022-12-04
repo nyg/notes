@@ -64,7 +64,7 @@ For a phase to do something, it must have one or more plugin goals bound to it. 
 Maven defines default bindings for each lifecycle, e.g. the clean goal of the maven-clean-plugin is bound to the clean phase of the clean lifecycle (see `components.xml`).
 
 For the default lifecycle, bindings are defined on a per-packaging basis (e.g. `jar`, `war`, `pom`) in `maven-core/META-INF/plexus/default-bindings.xml`:
-    
+
 | Lifecycle phase        | Plugin goal                              |
 | ---------------------- | ---------------------------------------- |
 | process-resources      | maven-resources-plugin:2.6:resources     |
@@ -82,7 +82,7 @@ For the default lifecycle, bindings are defined on a per-packaging basis (e.g. `
 
 Use the Maven Help plugin to get information about of plugin.
 
-```bash
+```sh
 # general syntax
 mvn <plugin-id>:<goal-id> -Dparameter=value
 
@@ -123,7 +123,7 @@ The source for this archetype can be found here: [https://repo.maven.apache.org/
 
 #### Generating a project
 
-```
+```sh
 # man page for the archetype plugin
 mvn help:describe -Dplugin=archetype -Ddetail
 

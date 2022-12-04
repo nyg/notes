@@ -7,7 +7,7 @@ jEnv is a version manager for Java. It has, however, some limitations:
 
 ## Install jEnv
 
-```bash
+```sh
 # install jenv
 brew install jenv
 
@@ -21,7 +21,7 @@ eval "$(jenv init -)"
 
 ## Install Java versions
 
-```bash
+```sh
 # for the latest java version
 brew cask install adoptopenjdk
 
@@ -33,7 +33,7 @@ brew cask install adoptopenjdk8
 
 ## Configure jEnv
 
-```bash
+```sh
 # inform jenv of the installed java versions
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
@@ -46,7 +46,7 @@ jenv versions
 
 ## Change the Java version
 
-```bash
+```sh
 # set the global version
 jenv global 13.0
 
@@ -63,7 +63,7 @@ JAVA\_HOME issue with UI apps: [https://www.ibm.com/support/knowledgecenter/en/S
 
 ## Misc
 
-```bash
+```sh
 # to see if everything is ok, or not
 jenv doctor
 
@@ -76,4 +76,3 @@ jenv help <command>
 # to get a list of installed JVM
 /usr/libexec/java_home -V
 ```
-

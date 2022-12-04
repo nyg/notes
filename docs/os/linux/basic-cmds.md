@@ -2,7 +2,7 @@
 
 ## `sort`, `uniq`, `cut`
 
-```bash
+```sh
 # Sort the first column of <file> in numerical reverse order (-k1gr) and then
 # the third column alphabetically, using ':' as field separator.
 cat <file> | sort -t':' -k1gr -k2d
@@ -21,4 +21,3 @@ cat <file> | sort -t':' -k1gr -k2d
 
 * `scp -P <port> <source> <target>`, e.g. `user@host:path`
 * `mktemp [-d] /tmp/file_XXXX`, create files or directory with unique names
-

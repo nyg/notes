@@ -2,7 +2,7 @@
 
 [https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10690](https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10690)
 
-```bash
+```sh
 # update ghost-cli
 cd /home/protected/ghost-cli
 ghost --version
@@ -25,4 +25,3 @@ rm -rf <version-number>
 cd /home/private
 yarn cache clean
 ```
-

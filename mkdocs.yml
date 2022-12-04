@@ -1,5 +1,7 @@
 site_name: Notes
 site_url: https://nyg.srht.site
+site_author: nyg
+site_description: Notes
 
 repo_name: nyg/cs-notes
 repo_url: https://git.sr.ht/~nyg/cs-notes
@@ -39,12 +41,112 @@ theme:
   icon:
     logo: logo
 
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
 nav:
   - Home: index.md
   - Programmation:
-    - Apollo GraphQL: prog/apollo-graphql.md
-    - Python: prog/python-cheat-sheet.md
-    - SageMath: prog/sagemath.md
-    - Vaadin: prog/vaadin.md
+      - Apollo GraphQL: prog/apollo-graphql.md
+      - Python: prog/python-cheat-sheet.md
+      - SageMath: prog/sagemath.md
+      - Frameworks:
+          - Vaadin: prog/vaadin.md
+      - Concurrency:
+          - Intro: prog/pco/README.md
+          - Résumé: prog/pco/summary.md
+          - Exclusion mutuelle: prog/pco/1_exclusion_mutuelle.md
+          - Threads: prog/pco/3_threads.md
+          - Verrous & sémaphores: prog/pco/4_verrous_semaphores.md
+          - Producteurs & consommateurs: prog/pco/5_producteurs_consommateurs.md
+          - Moniteurs: prog/pco/6_moniteurs.md
+          - Lecteurs & Rédacteurs: prog/pco/7_lecteurs_redacteurs.md
+      - Network:
+          - Intro: prog/res/README.md
+          - Java IO Streams: prog/res/java-io-streams.md
+          - SMTP: prog/res/smtp.md
+          - UDP: prog/res/udp.md
+      - Web:
+          - Résumé: prog/resume-tweb.md
+  - Softwares:
+      - iTerm: softwares/iterm.md
+      - Ghost Blog: softwares/ghost.md
+      - Nessus: softwares/nessus.md
+      - QtCreator: softwares/qt-creator.md
+      - Vagrant: softwares/vagrant.md
+      - VSCode: softwares/vscode.md
+      - Wireshark: softwares/wireshark.md
+  - Version management:
+      - Node: version-management/node.md
+      - Java: version-management/jenv.md
+      - Python:
+          - Pyenv: version-management/python/pyenv.md
+          - venv: version-management/python/venv.md
+  - OS:
+      - OpenBSD: os/openbsd.md
+      - macOS: os/macos.md
+      - sudo: os/sudo.md
+      - Linux:
+          - General: os/linux/general.md
+          - Basics: os/linux/basic-cmds.md
+          - Debian / Ubuntu: os/linux/debian-ubuntu.md
+          - Kali: os/linux/kali.md
+          - User management: os/linux/usr-mgmt.md
+      - Linux 2:
+          - Intro: os/linux2/intro.md
+          - Summary: os/linux2/summary.md
+          - ACL: os/linux2/acl.md
+          - auditd: os/linux2/auditd.md
+          - capabilities: os/linux2/capabilities.md
+          - cgroups & namespaces: os/linux2/cgroups-namespaces.md
+          - Extended attributes: os/linux2/extended_attributes.md
+          - iptables: os/linux2/iptables-co.md
+          - luks: os/linux2/luks.md
+          - mount: os/linux2/mount.md
+          - SUID, SGID, sticky bit: os/linux2/suid_sgid_sticky_bits.md
+          - systemd: os/linux2/systemd.md
+          - Misc: os/linux2/misc.md
+      - VMs & containers:
+          - Docker:
+              - One: os/docker1.md
+              - Two: os/docker2.md
+              - Three: os/docker3.md
   - Utilities:
-    - Maven: utilities/maven.md
+      - Maven: utilities/maven.md
+      - ffmpeg: utilities/ffmpeg.md
+      - ssh: utilities/ssh.md
+      - vim: utilities/vim.md
+      - Git:
+          - git: utilities/git.md
+          - git-xargs: utilities/git-xargs.md
+  - Security:
+      - Tools:
+          - hashcat: security/hashcat.md
+          - metasploit: security/metasploit.md
+          - radare2: security/radare2.md
+          - snort: security/snort.md
+      - Network:
+          - Intro: security/srx/intro.md
+          - Menaces: security/srx/chap_1_menaces.md
+          - Firewall: security/srx/chap_2_firewall.md
+          - IDS/IPS: security/srx/chap_3_ids_ips.md
+          - VPN: security/srx/chap_4_vpn.md
+          - Wireless: security/srx/chap_5_sans_fil.md
+          - Authentification: security/srx/chap_6_authentification.md
+      - Android: security/android.md
+      - Windows:
+          - Intro: security/windows/intro.md
+          - Summary: security/windows/summary.md
+          - Security components: security/windows/1_security_components.md
+          - Attack tools: security/windows/2_attacks_tools.md
+          - Vuln exploitation: security/windows/3_vuln_exploitation.md
+          - Credential theft: security/windows/4_credential_theft.md
+          - Persistence: security/windows/5_persistance.md
+          - Credentials protections: security/windows/6_credentials_protections.md
+          - Advanced authentication: security/windows/7_advanced_authentication.md
+          - Physical security: security/windows/8_physical_security.md
+  - Sysadmin:
+      - Administration IT: sysadmin/resume-ait.md
+      - Gestion des réseaux: sysadmin/resume-grx.md

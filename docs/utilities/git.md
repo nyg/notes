@@ -36,7 +36,7 @@
 
 ### Config
 
-```shell
+```sh
 # disable pager mode when doing git branch
 git config --global pager.branch false
 

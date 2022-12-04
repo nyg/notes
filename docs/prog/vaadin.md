@@ -5,7 +5,7 @@
 * prod: app is package as a war
 *   maven archetype:
 
-    ```
+    ```sh
     mvn archetype:generate -DarchetypeGroupId=com.vaadin -DarchetypeArtifactId=vaadin-archetype-application -DarchetypeVersion=LATEST
     ```
 * LiveReload plugin for the browser

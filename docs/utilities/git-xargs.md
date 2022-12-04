@@ -2,7 +2,7 @@
 
 [git-xargs](https://github.com/gruntwork-io/git-xargs) is a command-line tool for making updates across multiple GitHub repositories with a single command.
 
-```
+```sh
 export GITHUB_OAUTH_TOKEN=<your-secret-github-oauth-token>
 git-xargs \
   --dry-run \
