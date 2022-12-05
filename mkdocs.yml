@@ -6,6 +6,9 @@ site_description: Notes
 repo_name: nyg/cs-notes
 repo_url: https://git.sr.ht/~nyg/cs-notes
 
+extra_css:
+  - assets/extra.css
+
 theme:
   name: material
   custom_dir: overrides

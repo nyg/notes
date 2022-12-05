@@ -40,12 +40,12 @@ Delegating work to plugins, allows adding support for new frameworks without nee
 
 Therefore, plugins provide blocks of cross-cuting logic that can be reused accross multiple projects.
 
-More info: https://maven.apache.org/plugins/index.html
+More info: [maven.apache.org/plugins/index.html](https://maven.apache.org/plugins/index.html)
 
 ### Lifecycle & lifecycle phases
 
 
-A build lifecycle is an ordered sequence of phases. Maven defines three lifecycles: `default`, `clean` and `site`. The phases of each lifecycle is defined in `maven-core/META-INF/plexus/components.xml` (see [https://maven.apache.org/ref/3.8.4/maven-core/lifecycles.html](https://maven.apache.org/ref/3.8.4/maven-core/lifecycles.html)).
+A build lifecycle is an ordered sequence of phases. Maven defines three lifecycles: `default`, `clean` and `site`. The phases of each lifecycle is defined in `maven-core/META-INF/plexus/components.xml` (see [maven.apache.org/ref/3.8.4/maven-core/lifecycles.html](https://maven.apache.org/ref/3.8.4/maven-core/lifecycles.html)).
 
 ```sh
 mvn <lifecycle phase>
@@ -105,13 +105,13 @@ mvn help:system
 
 ### Archetype plugin
 
-[https://maven.apache.org/archetype/index.html](https://maven.apache.org/archetype/index.html)
+[maven.apache.org/archetype/index.html](https://maven.apache.org/archetype/index.html)
 
 Use the Maven Archetype plugin to create a project structure from a given archetype.
 
 #### Location of archetypes
 
-Knowledge about archetypes is stored in catalogs (XML files). The plugin comes with an internal catalog which is used by default (`archetype-common/src/main/resources/archetype-catalog.xml` ?). It also knows about the local (`~/.m2/archetype-catalog.xml`) and remote catalogs (https://repo.maven.apache.org/maven2/archetype-catalog.xml).
+Knowledge about archetypes is stored in catalogs (XML files). The plugin comes with an internal catalog which is used by default (`archetype-common/src/main/resources/archetype-catalog.xml` ?). It also knows about the local (`~/.m2/archetype-catalog.xml`) and remote catalogs ([repo.maven.apache.org/maven2/archetype-catalog.xml](https://repo.maven.apache.org/maven2/archetype-catalog.xml)).
 
 In a catalog, an archetype is represented by its `groupId`, `artifactId` and `version`. An optional `repository` property can be specified to indicate where to find the archetype. When omitted, the archetype is searched for in the repository where the catalog comes from.
 
@@ -119,7 +119,7 @@ In a catalog, an archetype is represented by its `groupId`, `artifactId` and `ve
 
 The default archetype used when generating a project is `maven-archetype-quickstart`. This is hardcoded in the `DefaultArchetypeSelector` class (`org.apache.maven.archetypes:maven-archetype-quickstart:1.0`).
 
-The source for this archetype can be found here: [https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/](https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/)
+The source for this archetype can be found here: [repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/](https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/)
 
 #### Generating a project
 
