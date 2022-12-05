@@ -8,6 +8,7 @@ repo_url: https://git.sr.ht/~nyg/cs-notes
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     # - header.autohide
     # - navigation.expand
