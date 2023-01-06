@@ -30,8 +30,13 @@ As will be seen later on, these defaults are provided my Maven's core plugins.
 Maven delegates most responsibilities to plugins. A plugin defines a set of goals, a goal is a unit of work. In order for a plugin to do something, one of its goal must be executed (either by invoking it directly from the command line or by binding it to a lifecycle phase, see below).
 
 ```sh
-# direct invocation
+# using the plugin id
 mvn <plugin-id>:<plugin-goal> -Dproperty1=value1 […]
+mvn help:describe -Dplugin=help -Ddetail
+
+# using the plugin coordinates, useful to specify the latest version
+mvn <group-id>:<artifact-id>:<version>:<goal> -Dproperty1=value1 […]
+mvn org.apache.maven.plugins:maven-dependency-plugin:3.4.0:list
 ```
 
 Examples of plugins include: maven-help-plugin, maven-compiler-plugin, maven-jar-plugin, maven-archetype-plugin, and plenty of third-party plugins. As for dependencies, plugins can be retrieved from the Maven repository.
