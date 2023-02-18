@@ -21,3 +21,4 @@ cat <file> | sort -t':' -k1gr -k2d
 
 * `scp -P <port> <source> <target>`, e.g. `user@host:path`
 * `mktemp [-d] /tmp/file_XXXX`, create files or directory with unique names
+* `setxkbmap -model apple\_laptop -layout ch -variant fr\_mac -option lv3:ralt\_switch`

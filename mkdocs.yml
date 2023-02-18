@@ -75,11 +75,22 @@ nav:
       - Web:
           - Résumé: prog/resume-tweb.md
   - Softwares:
-      - iTerm: softwares/iterm.md
+      - Docker:
+          - One: softwares/docker1.md
+          - Two: softwares/docker2.md
+          - Three: softwares/docker3.md
+      - ffmpeg: softwares/ffmpeg.md
+      - Git:
+          - git: softwares/git.md
+          - git-xargs: softwares/git-xargs.md
       - Ghost Blog: softwares/ghost.md
+      - iTerm: softwares/iterm.md
+      - Maven: softwares/maven.md
       - Nessus: softwares/nessus.md
       - QtCreator: softwares/qt-creator.md
+      - ssh: softwares/ssh.md
       - Vagrant: softwares/vagrant.md
+      - vim: softwares/vim.md
       - VSCode: softwares/vscode.md
       - Wireshark: softwares/wireshark.md
   - Version management:
@@ -89,42 +100,28 @@ nav:
           - Pyenv: version-management/python/pyenv.md
           - venv: version-management/python/venv.md
   - OS:
+      - Shell: os/shell.md
       - OpenBSD: os/openbsd.md
       - macOS: os/macos.md
       - sudo: os/sudo.md
       - Linux:
-          - General: os/linux/general.md
+          - Intro: os/linux/intro.md
           - Basics: os/linux/basic-cmds.md
+          - User management: os/linux/usr-mgmt.md
+          - Summary: os/linux/summary.md
+          - ACL: os/linux/acl.md
+          - auditd: os/linux/auditd.md
+          - capabilities: os/linux/capabilities.md
+          - cgroups & namespaces: os/linux/cgroups-namespaces.md
+          - Extended attributes: os/linux/extended-attributes.md
+          - iptables: os/linux/iptables-co.md
+          - luks: os/linux/luks.md
+          - mount: os/linux/mount.md
+          - SUID, SGID, sticky bit: os/linux/suid.md
+          - systemd: os/linux/systemd.md
+          - Misc: os/linux/misc.md
           - Debian / Ubuntu: os/linux/debian-ubuntu.md
           - Kali: os/linux/kali.md
-          - User management: os/linux/usr-mgmt.md
-      - Linux 2:
-          - Intro: os/linux2/intro.md
-          - Summary: os/linux2/summary.md
-          - ACL: os/linux2/acl.md
-          - auditd: os/linux2/auditd.md
-          - capabilities: os/linux2/capabilities.md
-          - cgroups & namespaces: os/linux2/cgroups-namespaces.md
-          - Extended attributes: os/linux2/extended_attributes.md
-          - iptables: os/linux2/iptables-co.md
-          - luks: os/linux2/luks.md
-          - mount: os/linux2/mount.md
-          - SUID, SGID, sticky bit: os/linux2/suid_sgid_sticky_bits.md
-          - systemd: os/linux2/systemd.md
-          - Misc: os/linux2/misc.md
-      - VMs & containers:
-          - Docker:
-              - One: os/docker1.md
-              - Two: os/docker2.md
-              - Three: os/docker3.md
-  - Utilities:
-      - Maven: utilities/maven.md
-      - ffmpeg: utilities/ffmpeg.md
-      - ssh: utilities/ssh.md
-      - vim: utilities/vim.md
-      - Git:
-          - git: utilities/git.md
-          - git-xargs: utilities/git-xargs.md
   - Security:
       - Tools:
           - hashcat: security/hashcat.md
