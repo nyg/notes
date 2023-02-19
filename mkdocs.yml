@@ -56,8 +56,6 @@ nav:
       - Apollo GraphQL: prog/apollo-graphql.md
       - Python: prog/python-cheat-sheet.md
       - SageMath: prog/sagemath.md
-      - Frameworks:
-          - Vaadin: prog/vaadin.md
       - Concurrency:
           - Intro: prog/pco/README.md
           - Résumé: prog/pco/summary.md
