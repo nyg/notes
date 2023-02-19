@@ -9,10 +9,14 @@ mkdocs build
 echo Creating archive…
 ( cd site && tar -cvz * > ../site.tar.gz )
 
-echo Uploading archive to pages.sr.ht
-curl --oauth2-bearer $(cat .sr.ht.token | head -1) -Fcontent=@site.tar.gz https://pages.sr.ht/publish/nyg.srht.site
+echo Uploading archive to pages.sr.ht…
+TOKEN=$(cat .sr.ht.token | head -1)
+curl --progress-bar \
+     --oauth2-bearer $TOKEN \
+     -Fcontent=@site.tar.gz \
+     https://pages.sr.ht/publish/nyg.srht.site | cat
 
-echo Upload archive:
+echo Uploaded archive:
 ls -lh site.tar.gz
 
 echo Removing archive…
