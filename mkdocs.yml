@@ -81,12 +81,14 @@ nav:
       - Git:
           - git: softwares/git.md
           - git-xargs: softwares/git-xargs.md
+      - SSH:
+          - ssh: softwares/ssh.md
+          - sshpass: softwares/sshpass.md
       - Ghost Blog: softwares/ghost.md
       - iTerm: softwares/iterm.md
       - Maven: softwares/maven.md
       - Nessus: softwares/nessus.md
       - QtCreator: softwares/qt-creator.md
-      - ssh: softwares/ssh.md
       - Vagrant: softwares/vagrant.md
       - vim: softwares/vim.md
       - VSCode: softwares/vscode.md
