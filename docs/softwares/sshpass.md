@@ -32,7 +32,29 @@
   ```
   This is probably the least unsecure method as the password is stored encrypted in a file and the shell's process substitution, i.e. `<(cmd)`, is used to create an anonymous pipe (which is what sshpass recommends but with `-d` instead of `-f`).
 
-  Notes on gpg:
+
+### GPG
+
+What is GPG and why use it with sshpass? GNU Privacy Guard is an implementation of the OpenPGP standard, it was created as a free-software replacement for PGP, which is developed by Broadcom Inc. under a proprietary software license.
+
+GPG has a daemon called `gpg-agent` which, among other things, caches passphrases used to encrypt private keys, so that the user is not required to provide his passphrase everytime he needs it.
+
+For example, when encrypting a password using a symmetric cipher (e.g. AES256) with the command below, `gpg-agent` will cache the passphrase for a certain amount of time before requesting it again from the user.
+
+```sh
+# this command will ask for a passphrase
+$ echo mypwd123 | gpg --symmetric -o myfile
+$ cat myfile
+# the encrypted password
+
+# this command will not ask for the passphrase, as it has been cached
+$ gpg -d myfile
+gpg: AES256.CFB encrypted data
+gpg: encrypted with 1 passphrase
+mypwd123
+```
+
+Thus, when combining sshpass and gpg, the user will only be required to input the passphrase on the first call to `gpg -d`. On certain OSes, it's also possible to store that passphrase in the OS's keyring app (e.g. GNOME Keyring). In this case, gpg will never ask for the passphrase, the keyring is unlocked when the user logs in with his password.
 
 ### Links
 
