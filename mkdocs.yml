@@ -91,7 +91,6 @@ nav:
       - QtCreator: softwares/qt-creator.md
       - Vagrant: softwares/vagrant.md
       - vim: softwares/vim.md
-      - VSCode: softwares/vscode.md
       - Wireshark: softwares/wireshark.md
   - Version management:
       - Node: version-management/node.md
