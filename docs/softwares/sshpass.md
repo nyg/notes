@@ -2,7 +2,11 @@
 
 **Summary**: how to encrypt and store a password into a file with GPG, and then decrypting it to provide it to sshpass. Also, some Zsh completion configuration for sshpass. Quick demo below with some dummy users and hosts:
 
-<script async id="asciicast-t0bQ0ln8MIbFIsWM1aTOTlQeq" src="https://asciinema.org/a/t0bQ0ln8MIbFIsWM1aTOTlQeq.js"></script>
+<script src="/assets/asciinema-player.min.js"></script>
+<div id="563649"></div>
+<script>
+  AsciinemaPlayer.create('/assets/563649.cast', document.getElementById('563649'))
+</script>
 
 ## Overview
 
@@ -12,7 +16,7 @@
   ```sh
   sshpass -p pwd123 ssh user@host
   ```
-  The least secure option: the password will appear for a short time in the output of `ps aux | grep sshpass` before sshpass "makes a mininal attempt to hide the password". It will also appear in the shell's history.
+  The least secure option: the password will appear for a short time in the output of `ps aux | grep sshpass` before sshpass "makes a mininal attempt to hide the password". It will also appear in the shell's history.
 
 * With an environment variable:
   ```sh
@@ -136,7 +140,7 @@ setopt menu_complete
 # Enable the interactive mode of the menu selection which allows to filter
 # listed choices by continuing to type letters on the cli. May be too much as it
 # prevents TAB from being used to go to the next item (see [1]). Arrow keys
-# can be used but then the interactive mode will exit (see [2]).
+# can be used but then the interactive mode will exit (see [2]).
 zstyle ':completion:*' menu select interactive
 
 # load menu selection module to define key bindings for the menuselect keymap
@@ -183,7 +187,7 @@ zstyle ':completion:*:*:(ssh|scp):*:descriptions' format '%F{green}-- %d%f'
 zstyle ':completion:*:*:(ssh|scp):*:*' group-name ''
 ```
 
-### sshpass
+### sshpass
 
 Put the script below in a file named `_sshpass` which must be in a folder that is in the `fpath`. If you modify the `fpath`, remember to do it before calling `compinit`. See [here][1] for more information.
 
@@ -222,7 +226,7 @@ _sshpass() {
 _sshpass "$@"
 ```
 
-### Misc
+### Misc
 
 Avoid storing commands starting by a space in the shell's history:
 

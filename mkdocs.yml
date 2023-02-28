@@ -8,6 +8,7 @@ repo_url: https://git.sr.ht/~nyg/cs-notes
 
 extra_css:
   - assets/extra.css
+  - assets/asciinema-player.css
 
 theme:
   name: material
