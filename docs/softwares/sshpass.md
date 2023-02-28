@@ -1,14 +1,18 @@
 # sshpass
 
+**Summary**: how to encrypt and store a password into a file with GPG, and then decrypting it to provide it to sshpass. Also, some Zsh completion configuration for sshpass. Quick demo below with some dummy users and hosts:
+
+<script async id="asciicast-t0bQ0ln8MIbFIsWM1aTOTlQeq" src="https://asciinema.org/a/t0bQ0ln8MIbFIsWM1aTOTlQeq.js"></script>
+
 ## Overview
 
-`sshpass` is a command-line tool allowing to connect to SSH hosts without having to interactively input the user's password. The password can be provided in different ways:
+`sshpass` is a command-line tool allowing a user to connect to SSH hosts without having to interactively input the user's password. The password can be provided to sshpass in different ways:
 
 * Via the command-line:
   ```sh
   sshpass -p pwd123 ssh user@host
   ```
-  The password will appear for a short time in the output of `ps aux | grep sshpass` before sshpass "makes a mininal attempt to hide the password". It will also appear in the shell's history.
+  The least secure option: the password will appear for a short time in the output of `ps aux | grep sshpass` before sshpass "makes a mininal attempt to hide the password". It will also appear in the shell's history.
 
 * With an environment variable:
   ```sh
@@ -30,7 +34,7 @@
   echo pwd123 | gpg --personal-cipher-preferences AES256 -c -o pwd.gpg
   sshpass -f <(gpg -dq pwd.gpg) ssh user@host
   ```
-  This is probably the least unsecure method as the password is stored encrypted in a file and the shell's process substitution, i.e. `<(cmd)`, is used to create an anonymous pipe (which is what sshpass recommends but with `-d` instead of `-f`).
+  This is probably the least unsecure method as the password is stored encrypted in a file, and the shell's process substitution, i.e. `<(command)`, is used to create an anonymous pipe (which is what sshpass recommends albeit with `-d` instead of `-f`).
 
 
 ### GPG
@@ -39,7 +43,7 @@ What is GPG and why use it with sshpass? GNU Privacy Guard is an implementation 
 
 GPG has a daemon called `gpg-agent` which, among other things, caches passphrases used to encrypt private keys, so that the user is not required to provide his passphrase everytime he needs it.
 
-For example, when encrypting a password using a symmetric cipher (e.g. AES256) with the command below, `gpg-agent` will cache the passphrase for a certain amount of time before requesting it again from the user.
+For example, when encrypting a password using a symmetric cipher (e.g. AES256) with the command below, gpg-agent will cache the passphrase for a certain amount of time before requesting it again from the user.
 
 ```sh
 # this command will ask for a passphrase
@@ -54,7 +58,7 @@ gpg: encrypted with 1 passphrase
 mypwd123
 ```
 
-Thus, when combining sshpass and gpg, the user will only be required to input the passphrase on the first call to `gpg -d`. On certain OSes, it's also possible to store that passphrase in the OS's keyring app (e.g. GNOME Keyring). In this case, gpg will never ask for the passphrase, the keyring is unlocked when the user logs in with his password.
+Thus, when combining sshpass and gpg, the user will only be required to input the passphrase on the first call to `gpg -d`. On certain OSes, it's also possible to store the passphrase in the OS's keyring app (e.g. GNOME Keyring). In this case, gpg will never ask for the passphrase, the keyring is unlocked when the user logs in with his password.
 
 ### Links
 
@@ -228,6 +232,7 @@ setopt hist_ignore_space
 
 ### Links
 
+* [The Valuable Dev: A Guide to the Zsh Completion with Examples][10]
 * [Description of Zsh options][6]
 * [Zsh completion system][7]
 * [Zsh completion widgets][8]
@@ -242,3 +247,4 @@ setopt hist_ignore_space
 [7]: https://zsh.sourceforge.io/Doc/Release/Completion-System.html
 [8]: https://zsh.sourceforge.io/Doc/Release/Completion-Widgets.html
 [9]: https://zsh.sourceforge.io/Doc/Release/Zsh-Modules.html
+[10]: https://thevaluable.dev/zsh-completion-guide-examples/
