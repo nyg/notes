@@ -1,4 +1,8 @@
-# ssh
+---
+title: ssh
+tags:
+  - ssh
+---
 
 OpenSSH is an implementation of the SSH protocol. It is mostly used to connect securely to remote hosts. OpenSSH is composed of different command-line tools:
 

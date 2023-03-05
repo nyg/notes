@@ -1,7 +1,7 @@
 site_name: Notes
 site_url: https://nyg.srht.site
 site_author: nyg
-site_description: Notes
+site_description: Technical Notes & Articles
 
 repo_name: nyg/cs-notes
 repo_url: https://git.sr.ht/~nyg/cs-notes
@@ -10,23 +10,26 @@ extra_css:
   - assets/extra.css
   - assets/asciinema-player.css
 
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: custom
+      custom_format: "%b %-d, ’%y"
+
 theme:
   name: material
   custom_dir: overrides
+  language: custom
   features:
-    # - header.autohide
-    # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
-    # - search.suggest
     - toc.follow
-    # - toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -52,7 +55,9 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Home: index.md
+  - Home:
+    - Welcome: index.md
+    - Tags: tags.md
   - Programmation:
       - Apollo GraphQL: prog/apollo-graphql.md
       - Python: prog/python-cheat-sheet.md
@@ -83,8 +88,8 @@ nav:
           - git: softwares/git.md
           - git-xargs: softwares/git-xargs.md
       - SSH:
-          - ssh: softwares/ssh.md
-          - sshpass: softwares/sshpass.md
+          - softwares/ssh.md
+          - softwares/sshpass.md
       - Ghost Blog: softwares/ghost.md
       - iTerm: softwares/iterm.md
       - Maven: softwares/maven.md

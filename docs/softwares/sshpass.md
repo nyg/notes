@@ -1,4 +1,10 @@
-# sshpass
+---
+title: Configuring sshpass
+tags:
+  - ssh
+  - gpg
+  - zsh
+---
 
 **Summary**: how to encrypt and store a password into a file with GPG, and then decrypting it to provide it to sshpass. Also, some Zsh completion configuration for sshpass. Quick demo below with some dummy users and hosts:
 
