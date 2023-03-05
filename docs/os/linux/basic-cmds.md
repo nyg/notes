@@ -1,4 +1,6 @@
-# Basic commands
+---
+title: Basic commands
+---
 
 ## `sort`, `uniq`, `cut`
 

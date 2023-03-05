@@ -1,4 +1,7 @@
-# SOS
+---
+title: SOS — Résumé
+description: Résumé de cours
+---
 
 ## Concepts Linux
 
@@ -167,4 +170,3 @@ Les droits UNIX définissent quels appels système peuvent accéder à quels fic
   * un namespace limite ce que les processus à l'intérieur de ce namespace sont capables de voir.
   * pid, net, mnt, uts, ipc, user
     * mnt : permet d'attacher un processus à son propre système de fichier \(un peu comme chroot\)
-

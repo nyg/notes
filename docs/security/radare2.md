@@ -2,7 +2,7 @@
 
 ```sh
 # start r2
-# -AA perform aaa analysis
+# -AA perform aaa analysis
 # -r provide rarun2 script (e.g. for stdin)
 # -d debug mode
 # -w writeable

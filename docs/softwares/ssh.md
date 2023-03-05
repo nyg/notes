@@ -36,7 +36,7 @@ sudo systemctl status ssh
 Before disabling password-based authentication, we need to add a public key in the user's `~/.ssh/authorized_keys` file.
 
 ```sh
-## Client
+## Client
 
 # Generate a public and private key (e.g. in ~/.ssh).
 ssh-keygen -t ed25519 -C "description of the key"

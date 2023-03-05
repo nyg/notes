@@ -1,4 +1,6 @@
-# Capabilities
+---
+title: Capabilities
+---
 
 ```sh
 # show current capabilities

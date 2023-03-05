@@ -1,4 +1,6 @@
-# Misc
+---
+title: Misc
+---
 
 ```sh
 # create 2048-bit key (??)

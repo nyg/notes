@@ -1,4 +1,6 @@
-# OpenBSD
+---
+title: OpenBSD
+---
 
 * [Awesome BSD](https://github.com/DiscoverBSD/awesome-bsd)
 * [Awesome OpenBSD](https://github.com/ligurio/awesome-openbsd)
@@ -15,11 +17,11 @@
 * Keyboard layout: en (or sf)
 * System hostname
 * Network interfaces to be configured
-  * [em](https://man.openbsd.org/em)
-  * [wpi](https://man.openbsd.org/wpi)
-    * Need the firmware to be ready (could not read firmware wpi-3945abg)
-    * [https://superuser.com/a/832026/578935](https://superuser.com/a/832026/578935)
-  * [vlan](https://man.openbsd.org/vlan)
+    * [em](https://man.openbsd.org/em)
+    * [wpi](https://man.openbsd.org/wpi)
+        * Need the firmware to be ready (could not read firmware wpi-3945abg)
+        * [https://superuser.com/a/832026/578935](https://superuser.com/a/832026/578935)
+    * [vlan](https://man.openbsd.org/vlan)
 * DNS domain name: my.domain
 * DNS nameservers: none
 * Password for root account
@@ -28,9 +30,9 @@
 * Setup a user: yes
 * Allow root ssh login: no
 * Which disk is the root disk?
-  * [wd](https://man.openbsd.org/wd)
-  * [sd](https://man.openbsd.org/sd)
-  * Disk setup: MBR, GPT, OpenBSD area, Edit
+    * [wd](https://man.openbsd.org/wd)
+    * [sd](https://man.openbsd.org/sd)
+    * Disk setup: MBR, GPT, OpenBSD area, Edit
 * Disk layout
 * Location of sets: disk, is mounted: no
 * Timezone: Europe/Paris
@@ -38,7 +40,7 @@
 ## Firmware
 
 * Check for missing firmware with `fw_update -vi`.
-  * [https://man.openbsd.org/fw\_update](https://man.openbsd.org/fw\_update)
+    * [https://man.openbsd.org/fw\_update](https://man.openbsd.org/fw\_update)
 * Install or update firmware for all drivers with `fw_update -a` (Internet connection required).
 * Or download non-free firmware [here](https://firmware.openbsd.org/firmware/) and install them with `fw_update -p <dir>`, the `.tgz` firmware must be in the directory specified, no need to extract.
 
@@ -102,20 +104,22 @@ Info: partion b is swap, partition c is whole disk
 
 ## /etc/hostname.if
 
-* Config for DHCP and IPv6
-  ```
-  dhcp
-  inet6 autoconf
-  inet6 alias <ipv6>
-  ```
+Config for DHCP and IPv6
+
+```
+dhcp
+inet6 autoconf
+inet6 alias <ipv6>
+```
 
 ## /etc/sysctl.conf
 
-* Config for IPv6?
-  ```
-  net.inet6.ip6.forwarding=0
-  net.inet6.ip6.accept_rtadv=1
-  ```
+Config for IPv6?
+
+```
+net.inet6.ip6.forwarding=0
+net.inet6.ip6.accept_rtadv=1
+```
 
 ## Mounting a USB drive
 
@@ -159,5 +163,5 @@ $ mount -t <fstype> /dev/sd0i /mnt/folder
 * `pkg_info -m` list of manually installed packages
 * Set `pkg_path`?
 * `/etc/installurl` must not be empty:
-  * [http://mirror.switch.ch/ftp/pub/OpenBSD](http://mirror.switch.ch/ftp/pub/OpenBSD)
-  * [http://ftp.cc.uoc.gr/mirrors/OpenBSD](http://ftp.cc.uoc.gr/mirrors/OpenBSD)
+    * [http://mirror.switch.ch/ftp/pub/OpenBSD](http://mirror.switch.ch/ftp/pub/OpenBSD)
+    * [http://ftp.cc.uoc.gr/mirrors/OpenBSD](http://ftp.cc.uoc.gr/mirrors/OpenBSD)

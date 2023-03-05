@@ -1,9 +1,27 @@
-.md-typeset h1 {
-    margin: 0 0 0.5em;
+/* Fix list margins */
+
+.md-typeset ol li,
+.md-typeset ul li {
+    margin-bottom: 0;
 }
 
-.md-typeset ol li, .md-typeset ul li {
+.md-typeset ol li ol,
+.md-typeset ol li ul,
+.md-typeset ul li ol,
+.md-typeset ul li ul {
+    margin-top: 0;
     margin-bottom: 0;
+}
+
+.md-typeset blockquote, .md-typeset dl, .md-typeset figure, .md-typeset ol, .md-typeset pre, .md-typeset ul {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+/* Style for tags and source file information which are under the page title */
+
+.md-typeset h1 {
+    margin: 0 0 0.5em;
 }
 
 .md-tags-source-file-container {

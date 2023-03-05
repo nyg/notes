@@ -1,4 +1,6 @@
-# sudo
+---
+title: sudo
+---
 
 ## Configuration
 

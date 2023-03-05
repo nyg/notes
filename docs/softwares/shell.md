@@ -1,5 +1,3 @@
-# Shell
-
 ## Environment variable, PATH
 
 * [https://help.ubuntu.com/community/EnvironmentVariables](https://help.ubuntu.com/community/EnvironmentVariables)
@@ -50,6 +48,6 @@
 * https://stackexchange.com/users/5719288/thomas-dickey?tab=accounts
   * https://invisible-island.net/
 
-## Misc
+## Misc
 
 * https://wiki.archlinux.org/title/zsh

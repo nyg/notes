@@ -1,4 +1,6 @@
-# LUKS
+---
+title: LUKS
+---
 
 ## Create encrypted volume
 

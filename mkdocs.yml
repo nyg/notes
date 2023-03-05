@@ -18,6 +18,9 @@ plugins:
       enable_creation_date: true
       type: custom
       custom_format: "%b %-d, ’%y"
+      exclude:
+        - index.md
+        - tags.md
 
 theme:
   name: material
@@ -98,6 +101,7 @@ nav:
       - Vagrant: softwares/vagrant.md
       - vim: softwares/vim.md
       - Wireshark: softwares/wireshark.md
+      - softwares/shell.md
   - Version management:
       - Node: version-management/node.md
       - Java: version-management/jenv.md
@@ -105,28 +109,26 @@ nav:
           - Pyenv: version-management/python/pyenv.md
           - venv: version-management/python/venv.md
   - OS:
-      - Shell: os/shell.md
-      - OpenBSD: os/openbsd.md
-      - macOS: os/macos.md
-      - sudo: os/sudo.md
+      - os/openbsd.md
+      - os/macos.md
+      - os/debian-ubuntu.md
+      - os/kali.md
       - Linux:
-          - Intro: os/linux/intro.md
-          - Basics: os/linux/basic-cmds.md
-          - User management: os/linux/usr-mgmt.md
-          - Summary: os/linux/summary.md
-          - ACL: os/linux/acl.md
-          - auditd: os/linux/auditd.md
-          - capabilities: os/linux/capabilities.md
-          - cgroups & namespaces: os/linux/cgroups-namespaces.md
-          - Extended attributes: os/linux/extended-attributes.md
-          - iptables: os/linux/iptables-co.md
-          - luks: os/linux/luks.md
-          - mount: os/linux/mount.md
-          - SUID, SGID, sticky bit: os/linux/suid.md
-          - systemd: os/linux/systemd.md
-          - Misc: os/linux/misc.md
-          - Debian / Ubuntu: os/linux/debian-ubuntu.md
-          - Kali: os/linux/kali.md
+          - os/linux/summary.md
+          - os/linux/basic-cmds.md
+          - os/linux/usr-mgmt.md
+          - os/linux/sudo.md
+          - os/linux/acl.md
+          - os/linux/auditd.md
+          - os/linux/capabilities.md
+          - os/linux/cgroups-namespaces.md
+          - os/linux/extended-attributes.md
+          - os/linux/iptables-co.md
+          - os/linux/luks.md
+          - os/linux/mount.md
+          - os/linux/suid.md
+          - os/linux/systemd.md
+          - os/linux/misc.md
   - Security:
       - Tools:
           - hashcat: security/hashcat.md

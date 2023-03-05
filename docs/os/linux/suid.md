@@ -1,4 +1,6 @@
-# SUID, GUID & Sticky bits
+---
+title: SUID, GUID & Sticky bits
+---
 
 * [https://en.wikipedia.org/wiki/User\_identifier](https://en.wikipedia.org/wiki/User_identifier)
 * [https://en.wikipedia.org/wiki/Setuid](https://en.wikipedia.org/wiki/Setuid)
@@ -8,9 +10,9 @@
 
 ### SUID & SGID on binaries
 
-SUID \(Set User ID\) and SGID \(Set Group ID\) are special types of UNIX file permissions. When a binary is executed, it is so with the privileges of its owner \(if SUID is set\), of its group \(if SGID is set\) or of both \(if both are set\). These file permissions only works for binaries and are ignored for interpreted scripts.
+SUID (Set User ID) and SGID (Set Group ID) are special types of UNIX file permissions. When a binary is executed, it is so with the privileges of its owner (if SUID is set), of its group (if SGID is set) or of both (if both are set). These file permissions only works for binaries and are ignored for interpreted scripts.
 
-A typical example is the `/usr/bin/passwd` which allows a user to change its password. Any user should be able to change its password, however, this requires `/etc/shadow` to be modified, which can only be done by root. By setting the SUID permission for the binary, which is owned by root, we allow this binary to be run as root \(the _effective UID_ is changed\) when another user executes it.
+A typical example is the `/usr/bin/passwd` which allows a user to change its password. Any user should be able to change its password, however, this requires `/etc/shadow` to be modified, which can only be done by root. By setting the SUID permission for the binary, which is owned by root, we allow this binary to be run as root (the _effective UID_ is changed) when another user executes it.
 
 SUID and SGID are different from `sudo` with which we can allow a user or group of users to execute a command as another user or group irrespective of who owns that binary. `sudo` is also used to determine who can execute a command, whilst with SUID and SGID we do not change who can execute a binary.
 
@@ -24,9 +26,9 @@ Using the sticky bit on a directory prevents any user having write access to the
 
 ## Example
 
-We have two users, user1 \(UID 1001\) and user2 \(UID 1002\). We also have a binary \(`suid`\) which reads a file \(`protected_file`\) and outputs its content. The binary can be executed by everybody but the file can be read only by user1. The binary is owned by user1.
+We have two users, user1 (UID 1001) and user2 (UID 1002). We also have a binary (`suid`) which reads a file (`protected_file`) and outputs its content. The binary can be executed by everybody but the file can be read only by user1. The binary is owned by user1.
 
-For user2 to be able to see file's content when executing the binary, the SUID bit must be set, changing the effective UID from user2 \(who can't read the file\) to user1 \(who can\).
+For user2 to be able to see file's content when executing the binary, the SUID bit must be set, changing the effective UID from user2 (who can't read the file) to user1 (who can).
 
 ```c
 /* suid.c */

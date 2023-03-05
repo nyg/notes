@@ -1,4 +1,6 @@
-# POSIX Extended attributes
+---
+title: POSIX Extended attributes
+---
 
 Available attributes depend on the filesystem used.
 
@@ -18,4 +20,3 @@ Available attributes depend on the filesystem used.
 * no tail-merging \(t\)
 * top of directory hierarchy \(T\)
 * undeletable \(u\)
-

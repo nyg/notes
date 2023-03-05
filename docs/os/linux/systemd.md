@@ -1,4 +1,6 @@
-# systemd
+---
+title: systemd
+---
 
 ## Service example
 

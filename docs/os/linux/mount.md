@@ -1,4 +1,6 @@
-# mount
+---
+title: mount
+---
 
 ## Misc
 

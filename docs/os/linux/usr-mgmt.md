@@ -1,4 +1,6 @@
-# Linux user and group management
+---
+title: Linux user and group management
+---
 
 ```sh
 $ cat /etc/group
@@ -12,8 +14,8 @@ group name:password:group id:group users
 * `gpasswd` -d user2 web
 * `users`: show logged in users
 * `usermod`: modify user account
-  * `usermod -aG group user`, add user user into group group
+    * `usermod -aG group user`, add user user into group group
 * `useradd`: add a user account
-  * `useradd -m -c "comment" -s /path/to/shell -G group_list user_name`
-  * `-m` create home
+    * `useradd -m -c "comment" -s /path/to/shell -G group_list user_name`
+    * `-m` create home
 * `userdel`: delete a user account

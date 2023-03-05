@@ -1,4 +1,6 @@
-# auditctl
+---
+title: auditctl
+---
 
 ```sh
 sudo auditctl -w /etc/passwd -p wra -k passwd
