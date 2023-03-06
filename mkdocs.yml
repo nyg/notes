@@ -22,6 +22,10 @@ plugins:
         - index.md
         - tags.md
 
+extra:
+  analytics:
+    provider: goatcounter
+
 theme:
   name: material
   custom_dir: overrides
