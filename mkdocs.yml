@@ -1,10 +1,10 @@
 site_name: Notes
-site_url: https://nyg.srht.site
+site_url: https://notes.andstuff.club
 site_author: nyg
-site_description: Technical Notes & Articles
+site_description: Technical notes & articles written over the years
 
-repo_name: nyg/cs-notes
-repo_url: https://git.sr.ht/~nyg/cs-notes
+repo_name: nyg/notes
+repo_url: https://git.sr.ht/~nyg/notes
 
 extra_css:
   - assets/custom.css
@@ -22,9 +22,9 @@ plugins:
         - index.md
         - tags.md
 
-extra:
-  analytics:
-    provider: goatcounter
+# extra:
+#   analytics:
+#     provider: goatcounter
 
 theme:
   name: material
