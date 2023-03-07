@@ -16,16 +16,16 @@
 * Save the last 10 connected users.
 * Allows login when the DC is not reachable.
 * Hashed with:
-  * DCCH version 1 \(Windows XP and below\)
-  * DCCH version 2 \(Windows Vista and above\)
+    * DCCH version 1 \(Windows XP and below\)
+    * DCCH version 2 \(Windows Vista and above\)
 
 ### LSA Secret
 
 * Registry key located in the SECURITY hive.
 * Stores a wide variety of credentials:
-  * services executed with a domain account,
-  * Windows auto-login,
-  * VPN passwords.
+    * services executed with a domain account,
+    * Windows auto-login,
+    * VPN passwords.
 * Passwords are encrypted.
 
 ### Credential Manager
@@ -33,8 +33,8 @@
 * Password manager embedded in Windows.
 * Credentials are saved in special folders called vaults that are encrypted using the DPAPI.
 * Separated in two sections:
-  * Web Credential
-  * Windows Credential
+    * Web Credential
+    * Windows Credential
 
 ### GPP
 
@@ -47,8 +47,8 @@
 * Contains all the Active Directory data including domain passwords.
 * Encrypted with the SYSKEY.
 * Protected against reading while the operating system is running but:
-  * the SYSTEM account has access,
-  * creating a Volume Shadow Copy using vssadmin allows to bypass this protection.
+    * the SYSTEM account has access,
+    * creating a Volume Shadow Copy using vssadmin allows to bypass this protection.
 * Having access to the file is like being a domain admin.
 
 ### Syskey
@@ -99,7 +99,7 @@ kiwi_cmd [cmd]
 
 * LM/NTLM hashes do not need to be cracked: network authentication relies on the hash, not on the clear text…
 * Metasploit offers Pass-the-hash in multiple modules like `exploit/windows/smb/psexec`:
-  * `set SMBPass [lmhash]:[ntlmhash]`
+    * `set SMBPass [lmhash]:[ntlmhash]`
 
 ## psexec
 

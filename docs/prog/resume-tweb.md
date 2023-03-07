@@ -226,10 +226,10 @@ When on website A, any request made to website B \(through an img tag, form, etc
 
 * Cookies and sessions
 * `Authorization` header
-  * HTTP Basic
-  * HMAC token
-  * Bearer token
-  * JWT token
+    * HTTP Basic
+    * HMAC token
+    * Bearer token
+    * JWT token
 * `X-API-Key` header
 * OAuth2
 * WebAuthN
@@ -246,11 +246,11 @@ When on website A, any request made to website B \(through an img tag, form, etc
 * An origin is defined by the domain name, the protocol and the port number of the URL.
 * A cross-origin request is made when a resource from a different origin than the original one is requested. For example, when Javascript code downloaded by the client from origin A wants to make a fetch request to origin B.
 * Not all cross-origin requests are controlled by  the browser. Examples of a few that are:
-  * `fetch` and `XMLHTTPRequest`,
-  * Web Fonts,
-  * WebGL textures
-  * `drawImage` of the Canvas API,
-  * CSS Shapes from images.
+    * `fetch` and `XMLHTTPRequest`,
+    * Web Fonts,
+    * WebGL textures
+    * `drawImage` of the Canvas API,
+    * CSS Shapes from images.
 * HTTP Headers are use both by the browser \(`Origin`\) making the cross-origin requests and by the server \(`Access-Control-Allow-Origin`\) responding to that request.
 * Some types of cross-origin requests requires the browser to make a preflight request \(HTTP `OPTIONS`\) to the server, to check if it is aware of the methods and headers used by the client. The browser will use additional HTTP headers \(e.g. `Access-Control-Request-Method`, `Access-Control-Request-Headers`\) and so will the server \(e.g. `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`\).
 * When making a cross-origin request to a domain, a flag can be set to include any existing cookies for that domain. This requires the server response to include both of these headers: `Access-Control-Allow-Credentials` and `Access-Control-Allow-Origin`. For the response to be accepted by the browser, the first one must be set to `true` and the second one must specify the domain name \(i.e. not use `*`\). This only concerns `fetch` and `XMLHTTPRequest` API.

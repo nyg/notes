@@ -3,11 +3,11 @@
 ## Anatomy of an attack
 
 * Attack pattern:
-  * initial foothold
-  * recon
-  * credential theft
-  * privilege escalation
-  * persistence
+    * initial foothold
+    * recon
+    * credential theft
+    * privilege escalation
+    * persistence
 
 ## Initial foothold
 
@@ -50,10 +50,10 @@
 * `set [att] [val]`: define attribute value
 * `run`: execute module
 * common attributes:
-  * `RHOST`/`RPORT`: target machine
-  * `LHOST`/`LPORT`: attacker machine
-  * `PAYLOAD`: payload to execute
-  * `THREADS`: number of simultaneous threads
+    * `RHOST`/`RPORT`: target machine
+    * `LHOST`/`LPORT`: attacker machine
+    * `PAYLOAD`: payload to execute
+    * `THREADS`: number of simultaneous threads
 
 ## Windows Reconnaissance
 
@@ -64,10 +64,9 @@
 ### db\_nmap
 
 * Allows to use nmap directly from Metasploit and imports results in the database
-  * `db_nmap -p 22 192.168.1.0/24 --open`
+    * `db_nmap -p 22 192.168.1.0/24 --open`
 * Results are available using `services`:
-  * `services -h`: display the command help
-  * `services -p`: filter results for a given TCP port
-  * `services -S`: filter results for a given string
-  * `services -R`: use the query results as RHOSTS
-
+    * `services -h`: display the command help
+    * `services -p`: filter results for a given TCP port
+    * `services -S`: filter results for a given string
+    * `services -R`: use the query results as RHOSTS

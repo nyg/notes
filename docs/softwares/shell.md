@@ -13,15 +13,15 @@
 * https://github.com/rbenv/rbenv/wiki/Unix-shell-initialization
 * [Setting $PATH for zsh on macOS.md](https://gist.github.com/Linerre/f11ad4a6a934dcf01ee8415c9457e7b2)
 * Bash
-  * [https://www.solipsys.co.uk/new/BashInitialisationFiles.html?RecentChanges](https://www.solipsys.co.uk/new/BashInitialisationFiles.html?RecentChanges)
-  * [https://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files](https://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files)
+    * [https://www.solipsys.co.uk/new/BashInitialisationFiles.html?RecentChanges](https://www.solipsys.co.uk/new/BashInitialisationFiles.html?RecentChanges)
+    * [https://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files](https://www.gnu.org/software/bash/manual/bash.html#Bash-Startup-Files)
 * ZSH
-  * [https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e](https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e)
-  * [https://gist.github.com/pbrisbin/45654dc74787c18e858c](https://gist.github.com/pbrisbin/45654dc74787c18e858c)
-  * [https://dev.to/jasmin/how-to-manage-zsh-startup-files-with-correct-settings-pkf](https://dev.to/jasmin/how-to-manage-zsh-startup-files-with-correct-settings-pkf)
-  * [https://www.zerotohero.dev/zshell-startup-files/](https://www.zerotohero.dev/zshell-startup-files/)
-  * [https://zsh.sourceforge.io/Doc/Release/Files.html#Startup\_002fShutdown-Files](https://zsh.sourceforge.io/Doc/Release/Files.html#Startup\_002fShutdown-Files)
-  * [https://zsh.sourceforge.io/Guide/zshguide02.html#l6](https://zsh.sourceforge.io/Guide/zshguide02.html#l6)
+    * [https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e](https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e)
+    * [https://gist.github.com/pbrisbin/45654dc74787c18e858c](https://gist.github.com/pbrisbin/45654dc74787c18e858c)
+    * [https://dev.to/jasmin/how-to-manage-zsh-startup-files-with-correct-settings-pkf](https://dev.to/jasmin/how-to-manage-zsh-startup-files-with-correct-settings-pkf)
+    * [https://www.zerotohero.dev/zshell-startup-files/](https://www.zerotohero.dev/zshell-startup-files/)
+    * [https://zsh.sourceforge.io/Doc/Release/Files.html#Startup\_002fShutdown-Files](https://zsh.sourceforge.io/Doc/Release/Files.html#Startup\_002fShutdown-Files)
+    * [https://zsh.sourceforge.io/Guide/zshguide02.html#l6](https://zsh.sourceforge.io/Guide/zshguide02.html#l6)
 
 ## Keys
 
@@ -46,7 +46,7 @@
 
 * https://stackexchange.com/users/164368/gilles-so-stop-being-evil?tab=accounts
 * https://stackexchange.com/users/5719288/thomas-dickey?tab=accounts
-  * https://invisible-island.net/
+    * https://invisible-island.net/
 
 ## Misc
 

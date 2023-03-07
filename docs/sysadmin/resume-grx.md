@@ -3,33 +3,33 @@
 ## Introduction
 
 * Infrastructure découpée en 3 domaines :
-  * application (serveur HTTP, db, ...)
-  * systèmes (Linux, Windows, ...)
-  * réseaux (ethernet, IP, TCP, ...)
+    * application (serveur HTTP, db, ...)
+    * systèmes (Linux, Windows, ...)
+    * réseaux (ethernet, IP, TCP, ...)
 * **Telecommunications Management Network** (TNM) : architecture pour la gestion de d'équipements, de réseaux et de services.
-  * Network Element (NE) : les éléments du réseaux,
-  * Element Management (EM) : la gestion de chaque élément du réseau,
-  * Network Management (NM) : la gestion des éléments _en_ réseau.
+    * Network Element (NE) : les éléments du réseaux,
+    * Element Management (EM) : la gestion de chaque élément du réseau,
+    * Network Management (NM) : la gestion des éléments _en_ réseau.
 * Modèle **OAM\&P** : fait références aux activités, méthodes, procédures et outils qui concerne la gestion, l'administration, la maintenance et l'approvisionnement de systèmes réseaux.
-  * **Operation** : maintenir le réseau et ses services dans un état fonctionnel, inclus la surveillance du réseau pour détecter des problèmes le plus tôt que possible.
-  * **Administration** : suivre les ressources du réseau et leur utilisation afin que tout soit sous contrôle.
-  * **Maintenance** : inclus la réparation et la mise à jour des éléments du réseau, peut être autant correctif que préventif.
-  * **Provisioning** : concerne la configuration des ressources du réseau afin de supporter un certain service.
+    * **Operation** : maintenir le réseau et ses services dans un état fonctionnel, inclus la surveillance du réseau pour détecter des problèmes le plus tôt que possible.
+    * **Administration** : suivre les ressources du réseau et leur utilisation afin que tout soit sous contrôle.
+    * **Maintenance** : inclus la réparation et la mise à jour des éléments du réseau, peut être autant correctif que préventif.
+    * **Provisioning** : concerne la configuration des ressources du réseau afin de supporter un certain service.
 * But de la gestion des réseaux : 1. surveiller les performances, 2. surveiller le fonctionnement des équipement, 3. gérer les configurations des équipements (mise en prod, backup, ...), 4. gérer les inventaires matériels et logiciels, 5. répartir les ressources et assurer la qualité des réseaux, 6. facturer la consomation des réseaux
 * Modèle **FCAPS** : Fault, Configuration, Accounting, Performance & Security.
 * **Total Cost of Ownership** (TCO) : le coût de fonctionnement d'un réseau est partagé entre le coût matériel et opérationnel (personnel, électricité, ...).
 * **Qualité de service** (QoS) : notion liée aux performance attendue d'un système pour que ses services fonctionnent correctement. S'oppose à la **qualité d'expérience** (QoE) : perception des performances globales du point de vue de l'utilisateur. Critères :
-  * bande passante,
-  * délai de transmission
-  * régularité
-  * perte de paquets
+    * bande passante,
+    * délai de transmission
+    * régularité
+    * perte de paquets
 * La gestion des équipements du réseau comprend : 1. alarme en cas de pannes matérielles ou logicielles, 2. alarme en cas d'événement atypique ou prédéfinis, 3. gestion des configurations des équipements, 4. gestion des mises à jour des équipements, 5. gestion du trafic et définition de règles, 6. découverte des équipements (cartographie réseau), 7. statistiques.
 * La plupart des systèmes et applications génèrent des informations (**logs**) quant à leur fonctionnement. Peuvent être affichés à l'écran, stockés dans des fichiers, transmis ailleurs. Différents niveaux d'information : erreur, avertissement, notification, ...
 * Certains systèmes peuvent aussi informer sur leur **état** : utilisation du processeur, température d'un composant, ...
 * Un **seuil** = valeur « normale » ± marge.
 * La gestion des éléments d'un réseau repose sur :
-  * la lecture passive des informations générées par les éléments,
-  * la demande explicite et active d'informations de ces éléments (état, ...).
+    * la lecture passive des informations générées par les éléments,
+    * la demande explicite et active d'informations de ces éléments (état, ...).
 * La quantité d'information peut être très importante, il faut les corréler pour savoir lesquelles sont importantes et éviter les faux positifs.
 
 ## Technologies
@@ -41,24 +41,24 @@
 * Management **out-of-band** : la gestion du réseau passe par un réseau dédié.
   ![in-out-of-band](../assets/in-out-of-band.png)
 * Fonctionnalités des **Network Management System** (NMS) :
-  * aggrégation d'alarmes,
-  * définition automatique de seuils d'alarmes,
-  * auto-decouverte des équipements des réseaux,
-  * interrogation des équipements,
-  * cartographie des réseaux,
+    * aggrégation d'alarmes,
+    * définition automatique de seuils d'alarmes,
+    * auto-decouverte des équipements des réseaux,
+    * interrogation des équipements,
+    * cartographie des réseaux,
 * Un équipement réseau peut être géré ou configuré via :
-  * une console locale (via un port série),
-  * une console distante (via telnet ou ssh),
-  * remote commandes (rsh ou rcmd),
-  * une interface graphique native,
-  * une interface web.
+    * une console locale (via un port série),
+    * une console distante (via telnet ou ssh),
+    * remote commandes (rsh ou rcmd),
+    * une interface graphique native,
+    * une interface web.
 
 ### Syslog
 
 * **Syslog** (System Logging Protocol, RFC 5424) permet de collecter et trier des événements au sein de fichiers logs centralisés. Envoi de messages de manière asynchrone et autonome. Différentes sources possibles :
-  * `klogd` (noyau),
-  * `/dev/log` (socket local, utilisation d'une API),
-  * réseau.
+    * `klogd` (noyau),
+    * `/dev/log` (socket local, utilisation d'une API),
+    * réseau.
 * Syslog est aussi un système client–serveur. Port UDP 514 utilisé.
 * Sécurité : messages ni chiffrés ni authentifiés, possibilité d'envoyer des faux messages.
 * Les messages syslog sont formatés : 1. **Header** 1. **Priority** = `Facility` + `Criticity` 1. `Facility` (source) : 24 codes possibles peuvent être associés aux processus émetteur de l'événement, e.g. kern, user, mail, daemon, auth, ... 2. `Criticity` (gravité) : 8 niveaux possibles, i.e. emerg, alert, crit, err, warning, notice, info, debug. 2. **Version** 3. **Timestamp** 4. **Hostname** 5. **Process name** 6. **Process id** 7. **Message id** 2. **Structured data** : id + param 3. **Message** : texte libre
@@ -98,33 +98,33 @@
 ### SNMP
 
 * Simple Network Management Protocol (RFC 1157) permet la gestion standardisée et distante d'équipements réseaux. Autant un protocole qu'une architecture client–serveur.
-  * un agent tourne sur un équipement et interagit avec son matériel et logiciels,
-  * une console interroge l'agent et collecte les informations,
-  * le protocole SNMP (UDP: ports 161 et 162) assure la communication entre la console et les agents.
+    * un agent tourne sur un équipement et interagit avec son matériel et logiciels,
+    * une console interroge l'agent et collecte les informations,
+    * le protocole SNMP (UDP: ports 161 et 162) assure la communication entre la console et les agents.
 * La v2 est la plus utilisée, la v3 la plus récente.
 * Fonctionnalités :
   1. **interrogation** des agents afin d'avoir des informations ou propriétés d'un équipement réseau,
   2. **configuration** d'un équipement via l'agent,
   3. **collecte** de _traps_ (alarmes) envoyées par un agent par l'intermédiaire d'une console de collecte. Envoi asynchrone et autonome déclenché sur la base d'un seuil ou d'un événement. Une action (envoi de mail, script) peut être déclenchée à ce moment là.
 * Opérations :
-  * **GET**, **WALK** : récupération de une ou plusieurs données,
-  * **SET** : modification de données ou paramètres,
-  * **TRAP** : envois d'alarmes.
-  * _Note_ : mal adapté pour les modifications massives.
+    * **GET**, **WALK** : récupération de une ou plusieurs données,
+    * **SET** : modification de données ou paramètres,
+    * **TRAP** : envois d'alarmes.
+    * _Note_ : mal adapté pour les modifications massives.
 * Version 2 : méchanisme d'authentification basique avec les _community strings_ définissant deux types d'accès : _public_ (read-only) et _private_ (read and write). Transmises en clair. Prévoir un VLAN de management pour autoriser les consoles à accéder aux agents.
 * Version 3 : remplacement des _community strings_ par 3 modes d'authentification :
-  * **noAuthNoPriv** : pas d'authentification, pas de chiffrement,
-  * **authNoPriv** : authentification HMAC-MD5 ou SHA, pas de chiffrement,
-  * **authPriv** : authentification HMAC-MD5 ou SHA, chiffrement DES 54-bits.
-  * _Note_ : pas implémenté par tous les équipements.
+    * **noAuthNoPriv** : pas d'authentification, pas de chiffrement,
+    * **authNoPriv** : authentification HMAC-MD5 ou SHA, pas de chiffrement,
+    * **authPriv** : authentification HMAC-MD5 ou SHA, chiffrement DES 54-bits.
+    * _Note_ : pas implémenté par tous les équipements.
 * Les données accessibles par SNMP sont modélisées par l'intermédiaire d'un **schéma** (assure l'interopérabilité entre agents et console). Le schéma est contenu dans une **MIB** (Management Information Base).
 * La MIB est une base de données en arborescence et définit des objets (**Managed Objects**—MO) supportés par un agent. Stockée dans des fichiers textes structurés. Une partie de la MIB est standard à tous les équipements. Possibilité d'extension par les fabricants d'équipements (MIB privées).
 * Chaque objet est définit par un **ID**, des **attributs** (données) et des **méthodes** (actions) qui peuvent y être appliquées (modèle SMI, syntaxe ASN.1). Correspondance entre la MIB à disposition de la console et les objets réellement implémentés dans l'agent.
 * Les _traps_ doivent être définies dans la MIB.
 * Des mesures de sécurité additionnelles sont nécessaires :
-  * contrôle d'accès sur les équipements via ACL (seul la console doit pouvoir interroger l'équipement),
-  * utilisation d'un reseau de management isolé (VLAN à part),
-  * restriction du protocole SNMP aux sources autorisées.
+    * contrôle d'accès sur les équipements via ACL (seul la console doit pouvoir interroger l'équipement),
+    * utilisation d'un reseau de management isolé (VLAN à part),
+    * restriction du protocole SNMP aux sources autorisées.
 *   Commandes IOS :
 
     ```
@@ -148,12 +148,12 @@
 * Le modèle CIM (**Common Information Model**) permet la représentation d'objets informatiques (tout comme SNMP). Utilisé principalement par Microsoft.
 * Un objet peut être du matériel, du logiciel, etc. Un objet à une **classe** qui définit ses **propriétés**. Il est manipulé par des **méthodes** et est référencé/adressé par son **namespace**.
 * Fait appel à :
-  * des agents composés de _providers_ (objet en surveillant d'autres) et de _managed objects_ (disques dur, cartes réseau, etc.),
-  * des gestionnaires (_consumers_).
+    * des agents composés de _providers_ (objet en surveillant d'autres) et de _managed objects_ (disques dur, cartes réseau, etc.),
+    * des gestionnaires (_consumers_).
 * Basé sur 3 niveaux de schémas conceptuels :
-  * **Core schema** : implémenté par tous les agents,
-  * **Common schema** : implémenté par les agents d'un même type (e.g db, app),
-  * **Extension schema** : propre à un fabricant.
+    * **Core schema** : implémenté par tous les agents,
+    * **Common schema** : implémenté par les agents d'un même type (e.g db, app),
+    * **Extension schema** : propre à un fabricant.
 * Les schémas sont décrit avec le format **MOF** (Managed Object File) de type UML.
 * Relations entre CIM et SNMP possibles.
 

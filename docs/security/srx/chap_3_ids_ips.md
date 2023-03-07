@@ -16,8 +16,8 @@
 * Le canal de notification doit être protégé, il faut éviter qu'un attaquant puisse empêcher la notification.
 * Idéalement, catégorise et identifie l'attaque. S'adapte aux nouvelles attaques.
 * Peut émettre des recommandations :
-  * évaluation de la vulnérabilité de la cible
-  * informations sur les corrections à appliquer
+    * évaluation de la vulnérabilité de la cible
+    * informations sur les corrections à appliquer
 * Identifie tant les attaques internes qu'externes.
 * N'est pas firewall, ne protège pas contre les attaques en cours.
 * La récolte de données par l'IDS peut poser des problèmes juridiques.
@@ -61,4 +61,3 @@
 ### NIPS
 
 * Peut bloquer le trafic, reconfigurer le firewall en temps réel.
-

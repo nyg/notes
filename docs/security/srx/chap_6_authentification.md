@@ -17,19 +17,19 @@
 * Messages Kerberos protégés contre l'écoute clandestine et le replay
 * Tiers de confiance nécessaire
 * **Key Distribution Center** \(KDC\)
-  * Authentication Server \(AS\)
-  * Ticket Granting Server \(TGS\)
+    * Authentication Server \(AS\)
+    * Ticket Granting Server \(TGS\)
 * **Ticket**
-  * Ticket Granting Ticket \(TGT\)
-  * Client to Server Ticket \(CST\)
+    * Ticket Granting Ticket \(TGT\)
+    * Client to Server Ticket \(CST\)
 * **Service Server**
 
 \(schéma page 39\)
 
 * Inconvénients
-  * repose sur la disponibilité d'un serveur central
-  * exigences strictes en matière de délais
-  * toutes les authentification gérées par un KDC central
+    * repose sur la disponibilité d'un serveur central
+    * exigences strictes en matière de délais
+    * toutes les authentification gérées par un KDC central
 
 ## RADIUS
 
@@ -40,4 +40,3 @@
 * Accounting : journalise les ressources accédées par un utilisateur
 * Seul le mot de passe est protégé, le reste est visible
 * Protections additionnelles : IPSec, réseaux dédiés
-

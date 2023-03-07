@@ -43,7 +43,7 @@ $ sudo cat /etc/sudoers | grep -E '^[^\s#]'
 
 ## TODO
 
-* /etc/sudoers.d/\* are concatenated to /etc/sudoers
+* `/etc/sudoers.d/\*` are concatenated to /etc/sudoers
 * User does not need to belong to sudo group
 * Add authorizations in config files, e.g.
 

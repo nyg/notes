@@ -7,11 +7,11 @@
 ## Priorité aux lecteurs
 
 * Un lecteur peut accéder à la ressource si :
-  * le nombre de rédacteurs en cours d’écriture vaut 0.
+    * le nombre de rédacteurs en cours d’écriture vaut 0.
 * Un rédacteur peut accéder à la ressource si :
-  * le nombre de rédacteurs en cours d’écriture vaut 0,
-  * le nombre de lecteurs en cours de lecture vaut 0 et
-  * le nombre de lecteurs en attente de la ressource vaut 0.
+    * le nombre de rédacteurs en cours d’écriture vaut 0,
+    * le nombre de lecteurs en cours de lecture vaut 0 et
+    * le nombre de lecteurs en attente de la ressource vaut 0.
 * `nbReaders` : nombre de lecteurs.
 * `mutexReaders` : protège l'accès à `nbReaders`.
 * `writer` : permet aux lecteurs de bloquer les futurs rédacteurs et permet à un rédacteur de bloquer les lecteurs pendant l’écriture.
@@ -135,4 +135,3 @@ void unlockWriting() {
     mutexWriters.release();
 }
 ```
-

@@ -7,26 +7,26 @@ Summary of the [Java I/O tutorial](https://docs.oracle.com/javase/tutorial/essen
 ### Byte streams
 
 * InputStream \(implements Closeable\)
-  * ByteArrayInputStream
-  * **FileInputStream**
-  * FilterInputStream
-    * **BufferedInputStream**
-    * DataInputStream \(implements DataInput\)
-    * LineNumberInputStream
-    * PushbackInputStream
-  * ObjectInputStream \(implements ObjectInput, ObjectStreamConstants\)
-  * PipedInputStream
-  * SequenceInputStream
-  * StringBufferInputStream
+    * ByteArrayInputStream
+    * **FileInputStream**
+    * FilterInputStream
+        * **BufferedInputStream**
+        * DataInputStream \(implements DataInput\)
+        * LineNumberInputStream
+        * PushbackInputStream
+    * ObjectInputStream \(implements ObjectInput, ObjectStreamConstants\)
+    * PipedInputStream
+    * SequenceInputStream
+    * StringBufferInputStream
 * OutputStream \(implements Closeable, Flushable\)
-  * ByteArrayOutputStream
-  * **FileOutputStream**
-  * FilterOutputStream
-    * **BufferedOutputStream**
-    * DataOutputStream \(implements DataOutput\)
-    * PrintStream \(implements java.lang.Appendable, Closeable\)
-  * ObjectOutputStream \(implements ObjectOutput, ObjectStreamConstants\)
-  * PipedOutputStream
+    * ByteArrayOutputStream
+    * **FileOutputStream**
+    * FilterOutputStream
+        * **BufferedOutputStream**
+        * DataOutputStream \(implements DataOutput\)
+        * PrintStream \(implements java.lang.Appendable, Closeable\)
+    * ObjectOutputStream \(implements ObjectOutput, ObjectStreamConstants\)
+    * PipedOutputStream
 
 All byte stream classes are descended from the abstract `InputStream` and `OutputStream` classes. All other stream types are built on byte streams.
 
@@ -35,24 +35,24 @@ All byte stream classes are descended from the abstract `InputStream` and `Outpu
 ### Character streams
 
 * Reader \(implements Closeable, java.lang.Readable\)
-  * **BufferedReader**
-    * LineNumberReader
-  * CharArrayReader
-  * FilterReader
-    * PushbackReader
-  * **InputStreamReader**
-    * FileReader
-  * PipedReader
-  * StringReader
+    * **BufferedReader**
+        * LineNumberReader
+    * CharArrayReader
+    * FilterReader
+        * PushbackReader
+    * **InputStreamReader**
+        * FileReader
+    * PipedReader
+    * StringReader
 * Writer \(implements java.lang.Appendable, Closeable, Flushable\)
-  * **BufferedWriter**
-  * CharArrayWriter
-  * FilterWriter
-  * **OutputStreamWriter**
-    * FileWriter
-  * PipedWriter
-  * PrintWriter
-  * StringWriter
+    * **BufferedWriter**
+    * CharArrayWriter
+    * FilterWriter
+    * **OutputStreamWriter**
+        * FileWriter
+    * PipedWriter
+    * PrintWriter
+    * StringWriter
 
 All character stream classes are descended from the abstract `Reader` and `Writer`.
 
@@ -73,9 +73,9 @@ There are four buffered stream classes used to wrap unbuffered streams: `Buffere
 ### Data streams
 
 * DataInput
-  * ObjectInput \(also extends java.lang.AutoCloseable\)
+    * ObjectInput \(also extends java.lang.AutoCloseable\)
 * DataOutput
-  * ObjectOutput \(also extends java.lang.AutoCloseable\)
+    * ObjectOutput \(also extends java.lang.AutoCloseable\)
 
 Data streams support binary I/O of primitive data type values \(`boolean`, `char`, `byte`, `short`, `int`, `long`, `float`, and `double`\) as well as `String` values.
 
@@ -84,4 +84,3 @@ All data streams implement either the `DataInput` interface or the `DataOutput` 
 ### Object streams
 
 Just as data streams support I/O of primitive data types, object streams support I/O of objects. The object stream classes are `ObjectInputStream` and `ObjectOutputStream`. These classes implement `ObjectInput` and `ObjectOutput`, which are subinterfaces of `DataInput` and `DataOutput`.
-

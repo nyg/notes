@@ -6,17 +6,17 @@
 
 * The Microsoft **Active Directory** service allows the centralised management of Microsoft devices.
 * Active Directory provides:
-  * centralised authentication & authorisation,
-  * device configuration.
+    * centralised authentication & authorisation,
+    * device configuration.
 * Active Directory is structured according to three **hierarchical levels**:
-  * domain: logical group of network objects,
-  * tree: collection of domains,
-  * forest: collection of trees.
+    * domain: logical group of network objects,
+    * tree: collection of domains,
+    * forest: collection of trees.
 * Active Directory **objects** include:
-  * users,
-  * computers,
-  * groups,
-  * organizational units.
+    * users,
+    * computers,
+    * groups,
+    * organizational units.
 
 ### Domain Controllers
 
@@ -48,12 +48,12 @@
 ### SID & RID
 
 * Relative ID, starts at 1000.
-  * 500 = Administrator
-  * 501 = Guest
+    * 500 = Administrator
+    * 501 = Guest
 * Constant SIDs:
-  * S-1-0-0: Nobody
-  * S-1-1-0: Everybody
-  * S-1-2-0: LOCAL
+    * S-1-0-0: Nobody
+    * S-1-1-0: Everybody
+    * S-1-2-0: LOCAL
 
 ### Computer account
 
@@ -65,4 +65,3 @@
 ## Logs
 
 * Stored in binary format \(.evtx, .evl\). Event View needed.
-

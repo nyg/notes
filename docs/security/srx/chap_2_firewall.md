@@ -18,18 +18,18 @@
 ## Fonctionnement
 
 * Utilise des informations de la couche transport :
-  * adresses IP et ports, source et destination
-  * protocol, e.g. TCP, UDP, ICMP
-  * flags TCP, e.g. SYN, ACK, RST
-  * type de message ICMP
+    * adresses IP et ports, source et destination
+    * protocol, e.g. TCP, UDP, ICMP
+    * flags TCP, e.g. SYN, ACK, RST
+    * type de message ICMP
 * Certains firewall peuvent aussi analyser la couche application
 
 ## Règles de filtrage
 
 * Autorisation par défaut
 * Interdiction par défaut
-  * penser à autoriser les réponses
-  * et à utiliser des règles statefull
+    * penser à autoriser les réponses
+    * et à utiliser des règles statefull
 * Accès conditionné
 
 ## Firewall statefull
@@ -96,10 +96,10 @@ $ iptables -t filter -A OUTPUT -p udp --dport 53 -j ACCEPT
 
 * Permet d'avoir des règles statefull. Activation avec l'option `-m state` ou `-m conntrack`.
 * Utilisation avec l'option `--ctstate` avec les valeurs suivantes :
-  * NEW : premier paquet d'une connexion
-  * ESTABLISHED : paquet d'une connexion en cours
-  * RELATED : paquet apparenté à une autre connexion \(e.g. FTP qui utilise deux ports différents\)
-  * INVALID : paquet sans état approprié
+    * NEW : premier paquet d'une connexion
+    * ESTABLISHED : paquet d'une connexion en cours
+    * RELATED : paquet apparenté à une autre connexion \(e.g. FTP qui utilise deux ports différents\)
+    * INVALID : paquet sans état approprié
 
 ```sh
 $ iptables -t filter -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT

@@ -37,8 +37,8 @@ Les **Logon Types** indiquent comment se déroule l'authentification. Le mot de 
 * Alphabet de 95 caractères.
 * Longueur maximale de 14 caractères. Si inférieur, complété par des caractères nuls.
 * Le résultat est la concaténation du hash des 7 premiers caractères avec celui des 7 suivants :
-  * beaucoup plus facile à bruteforcer \(2 \* 95 ^ 7 vs 95 ^ 14\),
-  * permet d'identifier les mot de passe de moins de 7 caractères \(car la deuxième partie est constante\).
+    * beaucoup plus facile à bruteforcer \(2 \* 95 ^ 7 vs 95 ^ 14\),
+    * permet d'identifier les mot de passe de moins de 7 caractères \(car la deuxième partie est constante\).
 
 ### Pass-the-hash
 
@@ -71,11 +71,11 @@ Prévention des intrusions : exploit protection, attack surface reduction rules,
 ## Mimikatz
 
 * Debug system processes \(SeDebugPrivilege\)
-  * permet à Mimikatz de récupérer les mots de passe stockés en mémoire
+    * permet à Mimikatz de récupérer les mots de passe stockés en mémoire
 * Shutdown the computer \(SeShutdownPrivilege\)
 * Change date and time \(SeSystemtimePrivilege\)
 * Use another access token \(SeImpersonatePrivilege\)
-  * permet de récupérer des Access Token \(utilisé avant l'apparition de Mimikatz\).
+    * permet de récupérer des Access Token \(utilisé avant l'apparition de Mimikatz\).
 
 **Mimikatz** est un outil développé par gentilkiwi et qui permet d'extraire les mots de passe \(en clair et hashé\), les codes PIN et les tickets Kerberos stockés en clair dans la mémoire. Mimikatz peut aussi exécuter une attaque pass-the-hash et pass-the-ticket ainsi que créer un Golden tickets.
 
@@ -227,4 +227,3 @@ Protocole UEFI. Vérifie la signature digitale des firmware, du bootloader et de
 ## Cold Boot Attack
 
 Refroidir la machine pour alonger le temps de rétention des données de la DRAM. Rend Bitlocker vulnérable si l'hibernation n'est pas activée \(car la VMK est dans la mémoire\).
-

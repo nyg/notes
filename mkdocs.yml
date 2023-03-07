@@ -100,11 +100,9 @@ nav:
       - Ghost Blog: softwares/ghost.md
       - iTerm: softwares/iterm.md
       - Maven: softwares/maven.md
-      - Nessus: softwares/nessus.md
       - QtCreator: softwares/qt-creator.md
       - Vagrant: softwares/vagrant.md
       - vim: softwares/vim.md
-      - Wireshark: softwares/wireshark.md
       - softwares/shell.md
   - Version management:
       - Node: version-management/node.md
@@ -135,10 +133,12 @@ nav:
           - os/linux/misc.md
   - Security:
       - Tools:
-          - hashcat: security/hashcat.md
-          - metasploit: security/metasploit.md
-          - radare2: security/radare2.md
-          - snort: security/snort.md
+          - security/hashcat.md
+          - security/metasploit.md
+          - security/nessus.md
+          - security/radare2.md
+          - security/snort.md
+          - security/wireshark.md
       - Network:
           - Intro: security/srx/intro.md
           - Menaces: security/srx/chap_1_menaces.md

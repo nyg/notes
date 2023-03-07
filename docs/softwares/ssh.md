@@ -13,10 +13,10 @@ OpenSSH is an implementation of the SSH protocol. It is mostly used to connect s
 ### Resources
 
 * [https://www.openssh.com/manual.html](https://www.openssh.com/manual.html)
-  * [https://man.openbsd.org/sshd](https://man.openbsd.org/sshd)
-  * [https://man.openbsd.org/sshd\_config](https://man.openbsd.org/sshd\_config)
-  * [https://man.openbsd.org/ssh](https://man.openbsd.org/ssh)
-  * [https://man.openbsd.org/ssh\_config](https://man.openbsd.org/ssh\_config)
+    * [https://man.openbsd.org/sshd](https://man.openbsd.org/sshd)
+    * [https://man.openbsd.org/sshd\_config](https://man.openbsd.org/sshd\_config)
+    * [https://man.openbsd.org/ssh](https://man.openbsd.org/ssh)
+    * [https://man.openbsd.org/ssh\_config](https://man.openbsd.org/ssh\_config)
 * Key types: [https://security.stackexchange.com/a/50890/](https://security.stackexchange.com/a/50890/)
 
 ### Installation

@@ -1,9 +1,9 @@
 # Android
 
 * .apk : application Android.
-  * AndroidManifest.xml
-  * classes.dex : Dalvik bytecode, DEX file format.
-  * Resources.arsc
+    * AndroidManifest.xml
+    * classes.dex : Dalvik bytecode, DEX file format.
+    * Resources.arsc
 * DVM, machine virtuelle pour le bytecode Dalvik.
 * Java/Kotlin compilé en DEX bytecode
 * DEX bytecode désassemblé en Smali puis en Java
@@ -17,8 +17,8 @@
 * apktool d app.apk -o output
 * apktool b output -o patched.apk
 * Décompilation : JEB, BytecodeViewer, Jadx
-  * dex2jar \(Dalvik to Java bytecode\)
-  * Jd-Gui \(Java bytecode to Java\)
+    * dex2jar \(Dalvik to Java bytecode\)
+    * Jd-Gui \(Java bytecode to Java\)
 * aapt dump badging \*.apk
 * adb devices
 * adb install app.apk
