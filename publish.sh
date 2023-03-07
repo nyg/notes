@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-# pip install mkdocs mkdocs-material
 
 set -eu
 
@@ -14,7 +13,7 @@ TOKEN=$(cat .sr.ht.token | head -1)
 curl --progress-bar \
      --oauth2-bearer $TOKEN \
      -Fcontent=@site.tar.gz \
-     https://pages.sr.ht/publish/nyg.srht.site | cat
+     https://pages.sr.ht/publish/notes.andstuff.club | cat
 
 echo Uploaded archive:
 ls -lh site.tar.gz

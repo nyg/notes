@@ -1,3 +1,3 @@
-# cs-notes
+# notes
 
-Published at: https://nyg.srht.site/
+Published at: [notes.andstuff.club](https://notes.andstuff.club/).
