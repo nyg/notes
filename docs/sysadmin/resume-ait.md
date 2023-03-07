@@ -1,4 +1,6 @@
-# Résumé: Administration IT
+---
+title: Résumé — Administration IT
+---
 
 ## Sauvegarde
 

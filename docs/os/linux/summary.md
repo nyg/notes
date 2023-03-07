@@ -1,6 +1,5 @@
 ---
-title: SOS — Résumé
-description: Résumé de cours
+title: Résumé — Sécurité des OS
 ---
 
 ## Concepts Linux

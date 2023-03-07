@@ -1,4 +1,6 @@
-# Résumé théorie
+---
+title: Résumé
+---
 
 ## Threads
 
@@ -16,4 +18,3 @@
 * Avec un moniteur de **Hoare**, le thread signalant perd possession du mutex et le thread signalé s'exécute immédiatement \(il prend donc possession du mutex\). C'est la raison pour laquelle vérifier la condition avec un `if` est suffisant.
 * Avec un moniteur de **Mesa**, le thread signalant garde possession du mutex. Le thread signalé ne s'exécute par forcément tout de suite après le thread signalant, un autre thread peut être exécuté entre les deux. D'où la nécessité du `while` pour vérifier la condition.
 * [https://pages.mtu.edu/~shene/NSF-3/e-Book/MONITOR/monitor-types.html](https://pages.mtu.edu/~shene/NSF-3/e-Book/MONITOR/monitor-types.html)
-

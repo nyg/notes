@@ -1,4 +1,6 @@
-# Ghost blog
+---
+title: Ghost blog
+---
 
 [https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10690](https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10690)
 

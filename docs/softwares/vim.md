@@ -1,4 +1,6 @@
-# vim
+---
+title: vim
+---
 
 ### Modes
 

@@ -1,4 +1,6 @@
-# Maven
+---
+title: Maven
+---
 
 *Notes from Maven: The Definitive Guide*
 

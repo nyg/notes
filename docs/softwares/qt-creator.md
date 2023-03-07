@@ -1,4 +1,6 @@
-# Qt Creator on macOS
+---
+title: Qt Creator on macOS
+---
 
 ## Install
 

@@ -1,4 +1,6 @@
-# Résumé: Technologie Web
+---
+title: Résumé — Technologie Web
+---
 
 ## URL parts
 

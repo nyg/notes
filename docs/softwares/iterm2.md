@@ -1,4 +1,6 @@
-# iTerm2
+---
+title: iTerm2
+---
 
 ### Keyboard shortcuts
 

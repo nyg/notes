@@ -1,4 +1,6 @@
-# git xargs
+---
+title: git-xargs
+---
 
 [git-xargs](https://github.com/gruntwork-io/git-xargs) is a command-line tool for making updates across multiple GitHub repositories with a single command.
 

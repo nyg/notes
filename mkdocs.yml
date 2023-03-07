@@ -10,6 +10,15 @@ extra_css:
   - assets/custom.css
   - assets/asciinema-player.css
 
+# extra:
+#   analytics:
+#     provider: goatcounter
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
 plugins:
   - search
   - tags:
@@ -22,20 +31,16 @@ plugins:
         - index.md
         - tags.md
 
-# extra:
-#   analytics:
-#     provider: goatcounter
-
 theme:
   name: material
   custom_dir: overrides
   language: custom
   features:
-    - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
-    - navigation.top
+    - navigation.instant
     - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
     - toc.follow
   palette:
     - scheme: default
@@ -56,11 +61,6 @@ theme:
   icon:
     logo: logo
 
-markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-
 nav:
   - Home:
     - Welcome: index.md
@@ -70,7 +70,6 @@ nav:
       - Python: prog/python-cheat-sheet.md
       - SageMath: prog/sagemath.md
       - Concurrency:
-          - Intro: prog/pco/README.md
           - Résumé: prog/pco/summary.md
           - Exclusion mutuelle: prog/pco/1_exclusion_mutuelle.md
           - Threads: prog/pco/3_threads.md
@@ -79,31 +78,28 @@ nav:
           - Moniteurs: prog/pco/6_moniteurs.md
           - Lecteurs & Rédacteurs: prog/pco/7_lecteurs_redacteurs.md
       - Network:
-          - Intro: prog/res/README.md
           - Java IO Streams: prog/res/java-io-streams.md
           - SMTP: prog/res/smtp.md
           - UDP: prog/res/udp.md
       - Web:
           - Résumé: prog/resume-tweb.md
   - Softwares:
-      - Docker:
-          - One: softwares/docker1.md
-          - Two: softwares/docker2.md
-          - Three: softwares/docker3.md
-      - ffmpeg: softwares/ffmpeg.md
       - Git:
-          - git: softwares/git.md
-          - git-xargs: softwares/git-xargs.md
+          - softwares/git.md
+          - softwares/git-xargs.md
       - SSH:
           - softwares/ssh.md
           - softwares/sshpass.md
-      - Ghost Blog: softwares/ghost.md
-      - iTerm: softwares/iterm.md
-      - Maven: softwares/maven.md
-      - QtCreator: softwares/qt-creator.md
-      - Vagrant: softwares/vagrant.md
-      - vim: softwares/vim.md
-      - softwares/shell.md
+      - Terminals & Shells:
+        - softwares/iterm2.md
+        - softwares/shell.md
+      - softwares/docker.md
+      - softwares/ffmpeg.md
+      - softwares/ghost-blog.md
+      - softwares/maven.md
+      - softwares/qt-creator.md
+      - softwares/vagrant.md
+      - softwares/vim.md
   - Version management:
       - Node: version-management/node.md
       - Java: version-management/jenv.md
@@ -140,7 +136,6 @@ nav:
           - security/snort.md
           - security/wireshark.md
       - Network:
-          - Intro: security/srx/intro.md
           - Menaces: security/srx/chap_1_menaces.md
           - Firewall: security/srx/chap_2_firewall.md
           - IDS/IPS: security/srx/chap_3_ids_ips.md
@@ -149,7 +144,6 @@ nav:
           - Authentification: security/srx/chap_6_authentification.md
       - Android: security/android.md
       - Windows:
-          - Intro: security/windows/intro.md
           - Summary: security/windows/summary.md
           - Security components: security/windows/1_security_components.md
           - Attack tools: security/windows/2_attacks_tools.md

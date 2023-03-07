@@ -1,4 +1,6 @@
-# Vagrant
+---
+title: Vagrant
+---
 
 * [CLI docs](https://www.vagrantup.com/docs/cli/)
 
@@ -15,4 +17,3 @@
 * `vagrant up`, creates vm and starts it \(adding it to virtualbox\)
 * `vagrant halt` \(i.e. shutdown\), `suspend`
 * `vagrant destroy`, deletes vm \(e.g. from virtualbox\)
-

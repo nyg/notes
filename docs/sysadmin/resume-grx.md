@@ -1,4 +1,6 @@
-# Résumé: Gestion des réseaux
+---
+title: Résumé — Gestion des réseaux
+---
 
 ## Introduction
 
