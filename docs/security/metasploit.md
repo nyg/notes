@@ -1,4 +1,6 @@
-# Metasploit
+---
+title: Metasploit
+---
 
 ```sh
 # allow msfdb to start during boot

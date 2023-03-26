@@ -136,12 +136,12 @@ nav:
           - security/snort.md
           - security/wireshark.md
       - Network:
-          - Menaces: security/srx/chap_1_menaces.md
-          - Firewall: security/srx/chap_2_firewall.md
-          - IDS/IPS: security/srx/chap_3_ids_ips.md
-          - VPN: security/srx/chap_4_vpn.md
-          - Wireless: security/srx/chap_5_sans_fil.md
-          - Authentification: security/srx/chap_6_authentification.md
+          - security/srx/chap_1_menaces.md
+          - security/srx/chap_2_firewall.md
+          - security/srx/chap_3_ids_ips.md
+          - security/srx/chap_4_vpn.md
+          - security/srx/chap_5_sans_fil.md
+          - security/srx/chap_6_authentification.md
       - Android: security/android.md
       - Windows:
           - Summary: security/windows/summary.md

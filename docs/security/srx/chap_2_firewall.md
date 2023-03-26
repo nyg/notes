@@ -1,4 +1,6 @@
-# Firewalls
+---
+title: Chapitre II — Firewalls
+---
 
 * Point d'étranglement pour le contrôle et la surveillance du trafic réseau.
 * Interconnecte des réseaux dont les niveaux de confiance sont différents.

@@ -1,4 +1,6 @@
-# Sécurité des réseaux sans fil
+---
+title: Chapitre V — Sécurité des réseaux sans fil
+---
 
 * 2 bandes : 2.4 et 5 GHz
 * Chaque bande divisée en canaux

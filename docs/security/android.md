@@ -1,4 +1,6 @@
-# Android
+---
+title: Android
+---
 
 * .apk : application Android.
     * AndroidManifest.xml

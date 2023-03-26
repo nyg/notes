@@ -2,7 +2,7 @@
 title: hashcat
 ---
 
-* Hashcat options: https://hashcat.net/wiki/doku.php?id=hashcat
+* Hashcat options: [https://hashcat.net/wiki/doku.php?id=hashcat][1]
 
 ## Potfile
 
@@ -43,3 +43,6 @@ hashcat -d3 -a3 -m1100 -i '***:Administrator' -1 ?l ?1?1?1?1?1?1?1?1
 hashcat -d3 -a3 -m2100 -i '$DCC2$10240#Administrator#***' -1 ?l ?1?1?1?1?1?1?1?1?1
 hashcat -d3 -a0 -m1100 '***:Administrator' Top304Thousand-probable-v2.txt
 ```
+
+
+[1]: https://hashcat.net/wiki/doku.php?id=hashcat

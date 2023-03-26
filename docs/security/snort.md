@@ -1,4 +1,6 @@
-# snort
+---
+title: snort
+---
 
 ## Configuration
 

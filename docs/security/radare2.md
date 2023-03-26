@@ -1,4 +1,6 @@
-# radare2
+---
+title: radare2
+---
 
 ```sh
 # start r2

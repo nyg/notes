@@ -1,4 +1,6 @@
-# Chapitre I : Menaces réseaux
+---
+title: Chapitre I — Menaces réseaux
+---
 
 ## Menaces
 
@@ -110,4 +112,3 @@ Port ouvert → service → application → vulnérabilité → exploit
 * **Smurf** : attaque DDoS en utilisant un ping ICMP avec comme adresse IP source celle de la cible. Les réponses ICMP inondent la cible.
 * **SYN flood** : établissement de connexions TCP \(3-way handshake\) forcant le serveur à allouer beaucoup de ressources.
 * **MAC table overflow**
-

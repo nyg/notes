@@ -1,4 +1,6 @@
-# IDS & IPS
+---
+title: Chapitre III — IDS & IPS
+---
 
 * Intrusion Detection and Protection Systems
 

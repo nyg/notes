@@ -1,4 +1,6 @@
-# VPN
+---
+title: Chapitre IV — VPN
+---
 
 ## Types de VPN
 

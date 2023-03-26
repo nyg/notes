@@ -1,4 +1,6 @@
-# Authentification
+---
+title: Chapitre VI — Authentification
+---
 
 ## PKI
 

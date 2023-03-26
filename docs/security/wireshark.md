@@ -1,7 +1,9 @@
-# Wireshark
+---
+title: Wireshark
+---
 
 ```sh
-only beacon frame
+# only beacon frame
 wlan.fc.type_subtype == 0x8
 
 sniff(iface='en0', prn=lambda x: x.show2(), monitor=True, filter='link[25] == 0x80', count=1)
