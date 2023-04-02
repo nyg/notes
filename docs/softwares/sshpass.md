@@ -8,11 +8,7 @@ tags:
 
 **Summary**: how to encrypt and store a password into a file with GPG, and then decrypting it to provide it to sshpass. Also, some Zsh completion configuration for sshpass. Quick demo below with some dummy users and hosts:
 
-<script src="/assets/asciinema-player.min.js"></script>
-<div id="563649"></div>
-<script>
-  AsciinemaPlayer.create('/assets/563649.cast', document.getElementById('563649'))
-</script>
+<script async id="asciicast-563649" src="https://asciinema.org/a/563649.js"></script>
 
 ## Overview
 
