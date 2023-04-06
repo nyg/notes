@@ -8,11 +8,10 @@ repo_url: https://git.sr.ht/~nyg/notes
 
 extra_css:
   - assets/custom.css
-  - assets/asciinema-player.css
 
-# extra:
-#   analytics:
-#     provider: goatcounter
+extra:
+  analytics:
+    provider: goatcounter
 
 markdown_extensions:
   - pymdownx.highlight
@@ -36,7 +35,7 @@ theme:
   custom_dir: overrides
   language: custom
   features:
-    - navigation.instant
+    #- navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.sections

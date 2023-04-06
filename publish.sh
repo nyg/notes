@@ -2,20 +2,29 @@
 
 set -eu
 
-echo Building website…
+echo_section() {
+    command echo "\n"$(tput bold)$@$(tput sgr0)
+}
+
+echo_section Building website…
 mkdocs build
 
-echo Creating archive…
-( cd site && tar -cvz * > ../site.tar.gz )
-
-echo Copying archive to host
-source .sshenv
-ssh $SSH_USER@$SSH_HOST 'rm -rf /home/public/notes.andstuff.club/* || echo Folder already empty'
-scp site.tar.gz $SSH_USER@$SSH_HOST:$SSH_DIR
-ssh $SSH_USER@$SSH_HOST "cd $SSH_DIR && tar -xvf site.tar.gz && rm site.tar.gz"
-
-echo Uploaded archive:
+echo_section Creating archive…
+( cd site && tar -cz * > ../site.tar.gz )
 ls -lh site.tar.gz
+
+source .sshenv
+echo "\n"Removing existing site files on host…
+ssh $SSH_USER@$SSH_HOST "find $SSH_DIR ! -name .well-known ! -name .htaccess -mindepth 1 -maxdepth 1 -exec rm -r {} +"
+
+echo_section Copying archive to host…
+scp site.tar.gz $SSH_USER@$SSH_HOST:$SSH_DIR
+
+echo "\n"Extracting archive to site folder…
+ssh $SSH_USER@$SSH_HOST "cd $SSH_DIR && tar -xf site.tar.gz && rm site.tar.gz"
+
+echo Setting executable permission for CGI script…
+ssh $SSH_USER@$SSH_HOST "chmod +x $SSH_DIR/assets/count.py"
 
 echo Removing archive…
 rm site.tar.gz
