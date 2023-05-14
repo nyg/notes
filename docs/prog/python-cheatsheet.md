@@ -1,4 +1,6 @@
-## Python Cheat Sheet
+---
+title: Python cheatsheet
+---
 
 ```py
 # int bases

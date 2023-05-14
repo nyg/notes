@@ -1,4 +1,6 @@
-# 4 – Verrous et Sémaphores
+---
+title: Verrous et Sémaphores
+---
 
 ## Verrous
 
@@ -69,4 +71,3 @@ QSemaphore::release(int n = 1)
 QSemaphore::tryAcquire(int n = 1)
 QSemaphore::available()
 ```
-

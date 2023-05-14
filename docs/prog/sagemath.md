@@ -1,6 +1,6 @@
-# SageMath
-
-## Issues
+---
+title: SageMath
+---
 
 * Unable to run `sage -pip install` due to issues with TLS.
   ```sh

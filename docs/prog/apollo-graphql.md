@@ -1,4 +1,6 @@
-# Apollo GraphQL
+---
+title: Apollo GraphQL
+---
 
 * Website: [https://www.apollographql.com/](https://www.apollographql.com/)
 * Apollo Client docs: [https://www.apollographql.com/docs/react/](https://www.apollographql.com/docs/react/)

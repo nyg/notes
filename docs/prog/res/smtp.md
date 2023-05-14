@@ -1,4 +1,6 @@
-# SMTP
+---
+title: Simple Mail Transfer Protocol
+---
 
 ```
 EHLO <user>

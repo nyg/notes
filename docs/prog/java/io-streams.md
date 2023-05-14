@@ -1,4 +1,6 @@
-# java-io-streams
+---
+title: IO streams
+---
 
 Summary of the [Java I/O tutorial](https://docs.oracle.com/javase/tutorial/essential/io/index.html).
 

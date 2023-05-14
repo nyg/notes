@@ -1,4 +1,6 @@
-# 5 – Producteurs-consommateurs
+---
+title: Producteurs-consommateurs
+---
 
 * Un thread **producteur** et un thread **consommateur** communiquent un utilisant un tampon.
 * Seul le producteur écrit et seul le consommateur lit dans le tampon.
@@ -68,4 +70,3 @@ T get(void) {
     return item;
 }
 ```
-

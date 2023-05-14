@@ -1,4 +1,6 @@
-# UDP – User Datagram Protocol
+---
+title: User Datagram Protocol
+---
 
 ## C API
 
@@ -67,4 +69,3 @@ socket.joinGroup(multicastGroup);
 
 * Service provider publish datagram with contact details in multicast group every 5 seconds. A client joins the multicast group and receives the datagrams.
 * The service provider joins a multicast group and the laptops send service request datagrams. Printers then contact the laptops individually with contact details.
-

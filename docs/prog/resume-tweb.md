@@ -1,5 +1,5 @@
 ---
-title: Résumé — Technologie Web
+title: Résumé
 ---
 
 ## URL parts

@@ -65,23 +65,26 @@ nav:
     - Welcome: index.md
     - Tags: tags.md
   - Programmation:
-      - Apollo GraphQL: prog/apollo-graphql.md
-      - Python: prog/python-cheat-sheet.md
-      - SageMath: prog/sagemath.md
+      - prog/apollo-graphql.md
+      - prog/python-cheatsheet.md
+      - prog/sagemath.md
+      - Java:
+          - prog/java/jdbc.md
+          - prog/java/log4j2.md
+          - prog/java/io-streams.md
       - Concurrency:
-          - Résumé: prog/pco/summary.md
-          - Exclusion mutuelle: prog/pco/1_exclusion_mutuelle.md
-          - Threads: prog/pco/3_threads.md
-          - Verrous & sémaphores: prog/pco/4_verrous_semaphores.md
-          - Producteurs & consommateurs: prog/pco/5_producteurs_consommateurs.md
-          - Moniteurs: prog/pco/6_moniteurs.md
-          - Lecteurs & Rédacteurs: prog/pco/7_lecteurs_redacteurs.md
+          - prog/pco/resume.md
+          - prog/pco/2-exclusion-mutuelle.md
+          - prog/pco/4-threads.md
+          - prog/pco/5-verrous-semaphores.md
+          - prog/pco/6-producteurs-consommateurs.md
+          - prog/pco/7-moniteurs.md
+          - prog/pco/8-lecteurs-redacteurs.md
       - Network:
-          - Java IO Streams: prog/res/java-io-streams.md
-          - SMTP: prog/res/smtp.md
-          - UDP: prog/res/udp.md
+          - prog/res/smtp.md
+          - prog/res/udp.md
       - Web:
-          - Résumé: prog/resume-tweb.md
+          - prog/resume-tweb.md
   - Softwares:
       - Git:
           - softwares/git.md

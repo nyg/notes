@@ -1,4 +1,6 @@
-# 3 – Threads
+---
+title: Threads
+---
 
 * **Green thread** : thread ordonnancé par une machine virtuelle ou une librairie qui émule l'ordonnanceur de l'OS.
 * **Native thread** : thread natif géré par l'ordonnanceur de l'OS.
@@ -35,4 +37,3 @@ QThread::isInterruptionRequested() // depuis le thread concerné
 QThread::currentThreadId()    // retourne l'id the thread courrant
 QThread::yieldCurrentThread() // le thread appelant est préempté
 ```
-
