@@ -69,6 +69,7 @@ nav:
       - prog/python-cheatsheet.md
       - prog/sagemath.md
       - Java:
+          - prog/java/release.md
           - prog/java/jdbc.md
           - prog/java/log4j2.md
           - prog/java/io-streams.md
