@@ -18,3 +18,10 @@ mkdocs serve
 # publish the site
 ./publi.sh
 ```
+
+## TODO
+
+* Add "timeago" in recently updated list
+* Display tags below recently updated list (?)
+* Fix paragraph margin in lists
+* Smaller font-size, serif font (?)
