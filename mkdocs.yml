@@ -1,13 +1,17 @@
 site_name: Notes
-site_url: https://notes.andstuff.club
+site_url: https://notes.andstuff.dev
 site_author: nyg
 site_description: Technical notes & articles written over the years
 
 repo_name: nyg/notes
 repo_url: https://git.sr.ht/~nyg/notes
 
+extra_javascript:
+  - assets/js/timeago.min.js
+  - assets/js/timeago_mkdocs_material.js
+
 extra_css:
-  - assets/custom.css
+  - assets/css/custom.css
 
 extra:
   analytics:

@@ -1,6 +1,6 @@
 # notes
 
-Published at: [notes.andstuff.club](https://notes.andstuff.club/).
+Published at: [notes.andstuff.dev](https://notes.andstuff.dev/).
 
 ## Instructions
 
@@ -21,7 +21,6 @@ mkdocs serve
 
 ## TODO
 
-* Add "timeago" in recently updated list
 * Display tags below recently updated list (?)
 * Fix paragraph margin in lists
 * Smaller font-size, serif font (?)
