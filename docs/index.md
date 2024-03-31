@@ -1,6 +1,7 @@
 ---
-title: Welcome
+title: Notes… and stuff!
 hide:
+  - navigation
   - toc
 ---
 

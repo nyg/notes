@@ -47,27 +47,27 @@ theme:
     - toc.follow
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue grey
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: blue grey
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: sans-serif
+    code: monospace
   icon:
     logo: logo
 
 nav:
   - Home:
-    - Welcome: index.md
-    - Tags: tags.md
+    - index.md
+    - tags.md
   - Programmation:
       - prog/apollo-graphql.md
       - prog/python-cheatsheet.md
@@ -163,3 +163,4 @@ nav:
   - Sysadmin:
       - Administration IT: sysadmin/resume-ait.md
       - Gestion des réseaux: sysadmin/resume-grx.md
+  - tags.md

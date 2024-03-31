@@ -27,27 +27,27 @@ The Maven release plugin helps automatizing certain tasks when making releases f
 
 In short, the `prepare` goal updates version numbers in the POMs and creates a tag in the SCM (e.g. Git). The `perform` goal checks out the created tag, builds the project artifacts and publishes them on a remote Maven repository.
 
-### `release:prepare`
+### Prepare release
 
 The detailed list of steps executed by the prepare goal are defined [here](https://maven.apache.org/maven-release/maven-release-plugin/usage/prepare-release.html) and [here](https://maven.apache.org/maven-release/maven-release-manager/#prepare). In scope of this project, the main ones are:
 
 1. Change the version numbers in the POM files. How the plugin will compute the version number to use for release (and the one to use for the next development version) is defined by the `projectVersionPolicyId` and `projectVersionPolicyConfig` goal parameters. As this mechanism does not allow us to specify whether we are performing a patch, minor or major release (if we are even using semantic versioning), we just pass these values via the `releaseVersion` and `developmentVersion` parameters (i.e. `-DreleaseVersion=2.0.0 -DdevelopmentVersion=2.0.1-SNAPSHOT` on the command line).
 
-    Note: in multi-module projects, set `autoVersionSubmodules` to true to have all POMs updated.
+    **Note:** in multi-module projects, set `autoVersionSubmodules` to true to have all POMs updated.
 
 2. Run the preparation goals. By default, the goals bound to the `clean` and `verify` lifecycle phases are executed. In this project we add another goal: `exec:exec` (of MojoHaus' [exec-maven-plugin](https://www.mojohaus.org/exec-maven-plugin)), in order to execute the `scripts/generate-changelog.sh` script which will execute git-cliff to update the CHANGELOG.md file. The config for git-cliff is in the `cliff.toml` file. The preparation goals are defined in the main POM file with the `preparationGoals` parameter.
 
-    Note: these goals are run for every Maven module, which require us to do some trickery in the generate-changelog.sh script to only run in the parent module. It's also possible to specify a list of profiles to enable via the `preparationProfiles` parameter.
+    **Note:** these goals are run for every Maven module, which require us to do some trickery in the generate-changelog.sh script to only run in the parent module. It's also possible to specify a list of profiles to enable via the `preparationProfiles` parameter.
 
 3. Create and push a commit with the changes made in the two steps above. The default commit message is something like "[maven-release-plugin] prepare release v2.0.0". The message can be customized with the following parameters: `scmCommentPrefix` and `scmReleaseCommitComment`. We only modify the prefix to `chore(release): ` in order to adhere to [conventional commits](https://www.conventionalcommits.org/).
 
-    Note: both commits and tags are signed (this requires some Git config, GPG keys and the `signTag` goal parameter). It is possible to prevent pushing the commit to the remote repository by setting `pushChanges` to false.
+    **Note:** both commits and tags are signed (this requires some Git config, GPG keys and the `signTag` goal parameter). It is possible to prevent pushing the commit to the remote repository by setting `pushChanges` to false.
 
 4. Tag the commit created in step 3 and push the tag to the remote repository. We specify the tag name on the command line, using the `tag` parameter, e.g. `-Dtag=v2.0.0`. If the tag is not given, see the `projectTagNamingPolicyId` and `tagNameFormat` parameters.
 
 5. Change the version numbers in the POM files to prepare for the next development version. As mentioned in the first step, this value is passed via the command line, with the `developmentVersion` parameter.
 
-    Note: if some custom goal needs to be run after this change and before the commit, it can be specified with the `completionGoals` parameter.
+    **Note:** if some custom goal needs to be run after this change and before the commit, it can be specified with the `completionGoals` parameter.
 
 6. Create and push a commit with the changes made above. The message of the commit can be customized with the `scmDevelopmentCommitComment`.
 
@@ -65,7 +65,7 @@ If we want to make sure thing are correct before committing we can use `-DdryRun
 mvn release:clean
 ```
 
-### GitHub Actions workflow
+### GitHub release
 
 As described above, a tag is created and pushed to the remote repository. In our case, that's GitHub. GitHub allows setting up workflows to run automatically when certain events are triggered. In `.github/workflows/github-release.yml`, we define a workflow to run whenever a new tag is pushed. This workflow will execute the following steps:
 
@@ -73,17 +73,21 @@ As described above, a tag is created and pushed to the remote repository. In our
 2. Generate a CHANGELOG.md file using the [git-cliff-action](https://github.com/orhun/git-cliff-action).
 3. Create a [GitHub release](https://github.com/nyg/kraken-api-java/releases) using the [GitHub CLI](https://cli.github.com/manual/gh_release_create) and give it the CHANGELOG.md file generated above to be used in the description.
 
-### `release:perform`
+### Perform release
 
 The `perform` goal is simpler than the `prepare` goal. Its documentation can be found [here](https://maven.apache.org/maven-release/maven-release-plugin/usage/perform-release.html). In scope of this project, the main steps are:
 
 1. Checkout out the version of the project specified in the `release.properties` file created by the `prepare` goal. This is done in the target folder.
+
 2. Run the perform goals defined by the `goals` parameter. The default is `deploy site-deploy`. While this is left unchanged, we set the `releaseProfiles` to `sonatype-release`. In this user-defined profile we do the following:
+
     1. use the [maven-source-plugin](https://maven.apache.org/plugins/maven-source-plugin/jar-no-fork-mojo.html) to create a source JAR (bound to the package phase),
+
     2. use the [maven-javadoc-plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html) to create a Javadoc JAR (bound to the package phase),
+
     3. use the [maven-gpg-plugin](https://maven.apache.org/plugins/maven-gpg-plugin/sign-mojo.html) to sign the JARs with a previously created GPG key (bound to the verify phase),
 
-        Note: these steps are required in order to produce a deployment considered valid by Sonatype, see [here](https://central.sonatype.org/publish/requirements/).
+        **Note:** these steps are required in order to produce a deployment considered valid by Sonatype, see [here](https://central.sonatype.org/publish/requirements/).
 
     4. use the [central-publishing-maven-plugin](https://central.sonatype.org/publish/publish-portal-maven/) to upload the built artifacts to the Sonatype's website (bound to the deploy phase). Once the artifacts are uploaded, they must be published to Maven Central. This can either be done manually through Sonatype's website, or by asking the plugin to do it for us by setting the `autoPublish` parameter to true. Also, as we don't want to publish the examples module, we exclude it with the `excludeArtifacts` parameter.
 

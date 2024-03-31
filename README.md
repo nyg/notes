@@ -18,9 +18,3 @@ mkdocs serve
 # publish the site
 ./publi.sh
 ```
-
-## TODO
-
-* Display tags below recently updated list (?)
-* Fix paragraph margin in lists
-* Smaller font-size, serif font (?)
