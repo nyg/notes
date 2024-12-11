@@ -37,7 +37,7 @@ plugins:
 theme:
   name: material
   custom_dir: overrides
-  language: custom
+  language: en
   features:
     #- navigation.instant
     - navigation.tracking
