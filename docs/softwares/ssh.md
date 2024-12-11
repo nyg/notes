@@ -83,19 +83,69 @@ sudo systemctl restart ssh # Debian
 PermitRootLogin no
 ```
 
-#### Dump effective configuration
+#### Check and dump effective configuration
 
 ```sh
+# validate the configuration, useful before restarting sshd, sudo is important
+sudo sshd -t
+
+# validate and dump the effective config
 sudo sshd -T -f /etc/ssh/sshd_config | sort
 ```
 
-#### Misc server configuration
+#### Host keys
+
+Host keys are the keys proving the identity of the server. They may not be
+enabled or properly created by default. If the validation of the config throws
+errors regarding host keys, it may be fixed in the following way:
 
 ```sh
-# /etc/ssh/sshd_config
+sudo rm -f /etc/ssh/ssh_host_* # remove existing key
+sudo ssh-keygen -A # generate keys
+
+# enable HostKey directives in the sshd_config file
 HostKey /etc/ssh/ssh_host_ed25519_key
+```
+
+#### Configuration overview
+
+```sh
+# Host Keys Configuration
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Security Settings
+PermitRootLogin no
+StrictModes yes
+RequiredRSASize 3072
+
+# Authentication Methods
+AuthenticationMethods publickey
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM no
+MaxAuthTries 3
+
+# User Access Control
+AllowUsers user
+
+# Network and Forwarding
 X11Forwarding no
+AllowAgentForwarding no
+AllowTcpForwarding no
+PermitTunnel no
+UseDNS no
+AllowStreamLocalForwarding no
+ClientAliveInterval 300
+
+# Logging and Miscellaneous
 Banner none
+Compression no
+LogLevel VERBOSE
 ```
 
 #### RemoteCommand and RequestTTY
