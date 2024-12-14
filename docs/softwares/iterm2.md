@@ -45,7 +45,7 @@ title: iTerm2
 
 ### Preferences: Backup & Restore
 
-Note: the "Expert all settings and data" in General > Settings seems to work
+Note: the "Export all settings and data" in General > Settings seems to work
 well, so the procedure below should not be needed anymore.
 
 On the machine with a configured iTerm2:
