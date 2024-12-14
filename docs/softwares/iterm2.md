@@ -45,22 +45,31 @@ title: iTerm2
 
 ### Preferences: Backup & Restore
 
+Note: the "Expert all settings and data" in General > Settings seems to work
+well, so the procedure below should not be needed anymore.
+
 On the machine with a configured iTerm2:
 
-1. Go to iTerm2's preferences, in General > Preferences.
-2. Check "Load preferences from a custom folder or URL."
-   * A pop-up opens prompting you to choose a folder. Choose the folder in which you want to **save** your iTerm2 settings.
-3. Click on "Save Now" next to the "Save changes" dropdown list.
-4. The settings have been saved in the folder you choose, the file is `com.googlecode.iterm2.plist`.
+1. Go to iTerm2's preferences, in General > Settings.
+2. Check "Load settings from a custom folder or URL."
+    * A pop-up opens prompting you to choose a folder. Choose the folder in which
+     you want to **save** your iTerm2 settings.
+    * A new pop-up opens asking "Copy local settings to custom folder now?",
+     click "Copy".
+3. In the "Save Changes" dropdown list, select "Manually" and then click on
+   "Save Now".
+4. The settings have been saved in the folder you choose, the file is
+   `com.googlecode.iterm2.plist`.
 
 On the machine with a default iTerm2:
 
-1. Go to iTerm2's preferences, in General > Preferences.
-2. Check "Load preferences from a custom folder or URL."
-   * This time, choose the folder in which the saved `com.googlecode.iterm2.plist` resides.
-   * If asked "Copy local preferences to custom folder now", click on "Don't copy."
+1. Go to iTerm2's preferences, in General > Settings.
+2. Check "Load settings from a custom folder or URL."
+    * This time, choose the folder in which the saved
+     `com.googlecode.iterm2.plist` resides.
+    * If asked "Copy local settings to custom folder now", click on "Don't copy."
 3. Wait a bit and then restart iTerm2.
 4. iTerm2 should now have the new imported configuration.
-5. Go to the Preferences and uncheck "Load preferences from a custom folder or URL."
+5. Go to the preferences and uncheck "Load settings from a custom folder or URL."
 
 This _should_ restore profiles, custom color themes as well as window arrangements.
