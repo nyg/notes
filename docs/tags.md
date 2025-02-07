@@ -5,4 +5,4 @@ hide:
   - toc
 ---
 
-[TAGS]
+<!-- material/tags -->
