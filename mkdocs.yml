@@ -100,10 +100,15 @@ nav:
       - Terminals & Shells:
         - softwares/iterm2.md
         - softwares/shell.md
+      - softwares/dig.md
       - softwares/docker.md
       - softwares/ffmpeg.md
+      - softwares/gdb.md
       - softwares/ghost-blog.md
       - softwares/maven.md
+      - softwares/nftables.md
+      - softwares/pnpm.md
+      - softwares/qemu.md
       - softwares/qt-creator.md
       - softwares/vagrant.md
       - softwares/vim.md
