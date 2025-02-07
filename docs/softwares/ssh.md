@@ -1,5 +1,5 @@
 ---
-title: ssh
+title: OpenSSH
 tags:
   - ssh
 ---
