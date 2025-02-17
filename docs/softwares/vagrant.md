@@ -14,6 +14,17 @@ title: Vagrant
 ## Workflow
 
 * `vagrant init`, reads Vagrantfile of current directory and initializes the .vagrant directory
-* `vagrant up`, creates vm and starts it \(adding it to virtualbox\)
-* `vagrant halt` \(i.e. shutdown\), `suspend`
-* `vagrant destroy`, deletes vm \(e.g. from virtualbox\)
+* `vagrant up`, creates vm and starts it (adding it to virtualbox)
+* `vagrant halt` (i.e. shutdown), `suspend`
+* `vagrant destroy`, deletes vm (e.g. from virtualbox)
+
+## macOS install
+
+```shell
+brew install --cask vagrant
+
+# to use vmware instead of virtualbox -> more support for apple silicon images
+# e.g. bento/debian-12
+brew install --cask vagrant-vmware-utility
+vagrant plugin install vagrant-vmware-desktop
+```
