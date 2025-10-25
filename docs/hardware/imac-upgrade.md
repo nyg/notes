@@ -24,9 +24,9 @@ The upgrades performed were the following:
 
 ### RAM
 
-As stated on EveryMac.com website, the official maximum amount of RAM supported
-is 2.5 GB (the internal 512 MB and an extra 2 GB RAM module). However, as also
-noted there, it’s very well possible to put a 4 GB RAM module.
+As stated on the EveryMac.com website, the official maximum amount of RAM
+supported is 2.5 GB (the internal 512 MB and an extra 2 GB RAM module). However,
+as also noted there, it’s very well possible to put a 4 GB RAM module.
 
 The RAM module should have the following specs: _4 GB Samsung 2Rx4
 PC2-6400U-666_. After some online digging, I settled for the one in the picture
@@ -70,9 +70,10 @@ suggest the following order of things:
 1. Upgrade the RAM.
 2. Open up the iMac: remove the white case, and disconnect the iSight camera and
    the screen to have access to the hard drive.
-3. Replace the 3.5" hard drive by the new 2.5" SSD and secure it with some good
-   duct tape so it doesn’t move. Be sure to reattach the hard drive’s thermal
-   sensor on the SSD, otherwise the iMac’s fans may run at full speed constantly.
+3. Replace the 3.5" hard drive with the new 2.5" SSD and secure it with some
+   good duct tape so it doesn’t move. Be sure to reattach the hard drive’s
+   thermal sensor on the SSD, otherwise the iMac’s fans may run at full speed
+   constantly.
 4. *This step isn’t shown in the iFixit guide*: you’ll need to disassemble the
    “structure” around the old screen and put it on the new screen, so that the
    new screen can be screwed back into the iMac (see pictures below).
@@ -80,7 +81,7 @@ suggest the following order of things:
 6. Format the SSD and install Mac OS X.
 7. Enjoy!
 
-There are some good Youtube videos showing how to disassemble and reassemble the
+There are some good YouTube videos showing how to disassemble and reassemble the
 iMac. Two of them below:
 
 <div class="video-wrapper">
@@ -109,7 +110,7 @@ The front and back of the original screen.
 ![front-old-screen](../assets/imac/35-old-screen.jpg)
 ![back-old-screen](../assets/imac/36-old-screen-back.jpg)
 
-The new screen, notice the abscence of the metallic structure and cables that are
+The new screen, notice the absence of the metallic structure and cables that are
 still on the old screen.
 ![front-new-screen](../assets/imac/40-new-screen.jpg)
 ![back-new-screen](../assets/imac/45-new-screen-back.jpg)
