@@ -25,7 +25,7 @@ The upgrades performed were the following:
 ### RAM
 
 As stated on EveryMac.com website, the official maximum amount of RAM supported
-is 2.5G (the internal 512 MB and an extra 2 GB RAM module). However, as also
+is 2.5 GB (the internal 512 MB and an extra 2 GB RAM module). However, as also
 noted there, it’s very well possible to put a 4 GB RAM module.
 
 The RAM module should have the following specs: _4 GB Samsung 2Rx4
@@ -109,7 +109,7 @@ The front and back of the original screen.
 ![front-old-screen](../assets/imac/35-old-screen.jpg)
 ![back-old-screen](../assets/imac/36-old-screen-back.jpg)
 
-The new screen, notice the abscence of the metalic structure and cables that are
+The new screen, notice the abscence of the metallic structure and cables that are
 still on the old screen.
 ![front-new-screen](../assets/imac/40-new-screen.jpg)
 ![back-new-screen](../assets/imac/45-new-screen-back.jpg)
