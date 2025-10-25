@@ -5,7 +5,7 @@ Published at: [notes.andstuff.dev](https://notes.andstuff.dev/).
 ## Instructions
 
 ```sh
-# install required python packages
+# install or update required python packages
 ./install.sh
 
 # build the site

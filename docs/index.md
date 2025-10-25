@@ -11,6 +11,7 @@ through the years. Some are more complete than others… You can find me on
 
 ### Articles
 
+* <small>(<time datetime="2025-10-25">2025-10-25</time>)</small> [Hardware upgrades for the iMac G5 1.9 GHz 17"](hardware/imac-upgrade.md)
 * <small>(<time datetime="2024-03-31">2024-03-31</time>)</small> [Releasing Java softwares with the Maven release plugin](prog/java/release.md)
 * <small>(<time datetime="2023-05-14">2023-05-14</time>)</small> [JDBC: showing different ways of obtaining a database connection](prog/java/jdbc.md)
 * <small>(<time datetime="2023-03-18">2023-03-18</time>)</small> [Log4j2: logging events in different files based on ThreadContext variables](prog/java/log4j2.md)

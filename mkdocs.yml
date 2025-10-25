@@ -167,4 +167,6 @@ nav:
   - Sysadmin:
       - Administration IT: sysadmin/resume-ait.md
       - Gestion des réseaux: sysadmin/resume-grx.md
+  - Hardware:
+    - hardware/imac-upgrade.md
   - tags.md
