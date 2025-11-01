@@ -1,5 +1,5 @@
 ---
-title: iMac G5 Upgrades
+title: iMac G5 Screen Upgrade
 description: Step-by-step guide to upgrading an iMac G5 17" (iSight, 2006) — adding RAM, SSD, and replacing the screen with full photos and part references.
 tags:
   - apple
@@ -9,16 +9,16 @@ tags:
   - imac
 ---
 
-About a year ago, I performed some hardware upgrades on an [iMac G5 1.9 GHz 17"
+I recently performed some hardware upgrades on an [iMac G5 1.9 GHz 17"
 (iSight)][1] from late 2005, and I thought I’d share some insight into the
 process, some pictures, as well as the final result.
 
-The upgrades performed were the following:
+The original idea was to replace the screen, which was suffering from the
+infamous “vertical lines” issue, with a new one. Then I thought I'd take this
+opportunity to also upgrade the RAM from 1.5 to 4.5 GB, and replace the 3.5" HDD
+with a 2.5" SSD.
 
-* upgrading the RAM from 1.5 to 4.5 GB (the official supported amount is 2.5 GB),
-* replacing the original 3.5" HDD by a 2.5" SSD,
-* replacing the original screen with a new one, which was showing vertical lines
-  (an issue frequently reported).
+![vertical-lines-screen](../assets/imac/00-vertical-lignes.jpg)
 
 ## Buying new hardware
 
@@ -51,7 +51,7 @@ Total cost of the upgrades: $276.
 
 ### Overview
 
-On [this page][4], we can find all iFixit guides for our iMac. However, we are
+On [this page][4], we can find all iFixit guides for this iMac. However, we are
 mostly interested in the one for the [RAM replacement][2], the [hard drive
 replacement][6], and the [screen replacement][5].
 
@@ -68,17 +68,17 @@ hard drive, you’ll first need to disconnect the screen. For these reasons, I
 suggest the following order of things:
 
 1. Upgrade the RAM.
-2. Open up the iMac: remove the white case, and disconnect the iSight camera and
+2. Open up the iMac: remove the white case, disconnect the iSight camera, and
    the screen to have access to the hard drive.
-3. Replace the 3.5" hard drive with the new 2.5" SSD and secure it with some
-   good duct tape so it doesn’t move. Be sure to reattach the hard drive’s
-   thermal sensor on the SSD, otherwise the iMac’s fans may run at full speed
+3. Replace the old hard drive with the new 2.5" SSD and secure it with some good
+   duct tape so it doesn’t move. Be sure to reattach the hard drive’s thermal
+   sensor on the SSD, otherwise the iMac’s fans may run at full speed
    constantly.
 4. *This step isn’t shown in the iFixit guide*: you’ll need to disassemble the
    “structure” around the old screen and put it on the new screen, so that the
    new screen can be screwed back into the iMac (see pictures below).
 5. Reassemble the iMac.
-6. Format the SSD and install Mac OS X.
+6. Format the SSD and install Mac OS X. Important: see next section A note on software.
 7. Enjoy!
 
 There are some good YouTube videos showing how to disassemble and reassemble the
@@ -87,7 +87,7 @@ iMac. Two of them below:
 <div class="video-wrapper">
     <iframe width="100%" src="https://www.youtube.com/embed/_ux2cA7IHbA?si=17RYMPU4dTP0jpGR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
+<br/>
 <div class="video-wrapper">
     <iframe width="100%" src="https://www.youtube.com/embed/g1x4OBZG0U4?si=FLwokLuRlCjuE1d7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -123,7 +123,7 @@ Some close ups of the original screen.
 ![screen-details-5](../assets/imac/55-screen-details.jpg)
 ![screen-details-6](../assets/imac/56-screen-details.jpg)
 
-The new screen with the metalic structure and cables around it.
+The new screen with the metallic structure and cables around it.
 ![new-screen-before-assembly](../assets/imac/60-new-screen-before-assembly.jpg)
 
 After the structure has been screwed in. Tape everything.
@@ -140,22 +140,46 @@ pain, as my optical drive worked only about 10% of the time.
 500 GB SSD, 4.5 GB of RAM and a new screen!
 ![final-specs](../assets/imac/99-final-specs.jpg)
 
-Browsing the web using [TenFourFox][8] web browser (Tiger’s Safari doesn’t
-support newer TLS versions).
-![ten-four-fox](../assets/imac/90-ten-four-fox.jpg)
+## A note on software
+
+### Disk Utility
+
+One important thing to keep in mind before formatting the new SSD: Disk Utility
+in Tiger doesn’t support creating additional partitions without erasing the
+existing one.
+
+So if you plan to first install Tiger and then add a second partition for
+Leopard, make sure to create both from the start — unless you have a Leopard
+install disc, in which case you’ll be able to modify the partition table later
+without wiping the drive.
+
+### HTTPS browser for Tiger
+
+Safari in Tiger doesn’t support modern TLS versions, so most HTTPS websites
+won’t load. Alternatives include [TenFourFox][9] (a fork of Firefox) and
+[InterWebPPC][9] (a fork of TenFourFox). Both are discontinued, but
+InterWebPPC’s latest version (from 2023) is a bit more recent.
+
+Browsing the web using InterWebPPC on Tiger
+![interwebppc-tiger](../assets/imac/90-interwebppc.jpg)
+
+### Shuriken and Sorbet Leopard
+
+[Shuriken][10] is a collection of scripts for Tiger, mainly aimed at improving
+system performance. [Sorbet Leopard][11] is a modified version of Leopard that
+includes updated certificates, performance tweaks, and other patches. Both were
+created by the same developer but are no longer maintained.
+
+Content of Shuriken
+![shuriken-content](../assets/imac/95-shuriken.jpg)
+
+The Sorbet App Store on Sorbet Leopard (the Keychron K3 works on both Tiger and Leopard)
+![sorbet-leopard](../assets/imac/96-sorbet-leopard.jpg)
 
 ## Conclusion
 
-I’d been wanting to do this for a long time, and now it’s finally done!
-
-The iMac now restarts in 52 seconds — unfortunately, I don’t have a measurement
-from before the upgrade for comparison.
-
-It’s still running Mac OS X Tiger (10.4), even though it should support Leopard
-and possibly a hacked version of Snow Leopard. Upgrading from 10.4 to 10.5 would
-be nice, as Tiger doesn’t support the latest TLS versions, which makes Safari
-pretty much useless and renders software updates impossible.
-
+I’d been meaning to tackle these upgrades for years, and it’s deeply satisfying
+to see this iMac running smoothly again!
 
 [1]: https://everymac.com/systems/apple/imac/specs/imac_g5_1.9_17.html
 [2]: https://ifixit.com/Tutoriel/iMac+G5+17-Inch+Model+A1144+RAM+Replacement/938
@@ -164,4 +188,7 @@ pretty much useless and renders software updates impossible.
 [5]: https://ifixit.com/Tutoriel/iMac+G5+17-Inch+Model+A1144+Display+Replacement/942
 [6]: https://ifixit.com/Tutoriel/iMac+G5+17-Inch+Model+A1144+Hard+Drive+Replacement/948
 [7]: https://www.dvwarehouse.com/661-3789-apple-lcd-display-panel-for-imac-g5-17-isight-1-9ghz.html
-[8]: https://www.floodgap.com/software/tenfourfox/
+[8]: http://www.tenfourfox.com/
+[9]: https://macintoshgarden.org/apps/interwebppc-browser-a-rebrand-of-tenfourfox-the-future
+[10]: https://macintoshgarden.org/apps/shuriken
+[11]: https://macintoshgarden.org/apps/sorbet-leopard

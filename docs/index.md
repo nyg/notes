@@ -5,16 +5,16 @@ hide:
   - toc
 ---
 
-This website is a collection of computer-science-related notes I've accumulated
-through the years. Some are more complete than others… You can find me on
-[SourceHut][1] and [GitHub][2].
+On this website, you'll find a collection of computer-science-related notes I've
+accumulated through the years, as well as a few technical articles. My code can
+be found on [GitHub][2] and [SourceHut][1].
 
 ### Articles
 
-* <small>(<time datetime="2025-10-25">2025-10-25</time>)</small> [Hardware upgrades for the iMac G5 1.9 GHz 17"](hardware/imac-upgrade.md)
+* <small>(<time datetime="2025-10-25">2025-10-25</time>)</small> [A new screen for the iMac G5 1.9 GHz 17" (iSight)](hardware/imac-upgrade.md)
 * <small>(<time datetime="2024-03-31">2024-03-31</time>)</small> [Releasing Java softwares with the Maven release plugin](prog/java/release.md)
-* <small>(<time datetime="2023-05-14">2023-05-14</time>)</small> [JDBC: showing different ways of obtaining a database connection](prog/java/jdbc.md)
-* <small>(<time datetime="2023-03-18">2023-03-18</time>)</small> [Log4j2: logging events in different files based on ThreadContext variables](prog/java/log4j2.md)
+* <small>(<time datetime="2023-05-14">2023-05-14</time>)</small> [Exploring different ways of obtaining a database connection with JDBC](prog/java/jdbc.md)
+* <small>(<time datetime="2023-03-18">2023-03-18</time>)</small> [Log4j2: logging events in different files based on `ThreadContext` variables](prog/java/log4j2.md)
 * <small>(<time datetime="2023-02-25">2023-02-25</time>)</small> [Configuring `sshpass` with `gpg` & Zsh completion](softwares/sshpass.md)
 * <small>(<time datetime="2022-12-04">2022-12-04</time>)</small> [SUID, GUID & Sticky bits](os/linux/suid.md)
 * <small>(<time datetime="2022-12-04">2022-12-04</time>)</small> [Maven basics](softwares/maven.md)
