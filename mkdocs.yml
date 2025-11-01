@@ -25,6 +25,10 @@ markdown_extensions:
 plugins:
   - search
   - tags
+  - glightbox:
+      width: 90%
+      auto_themed: true
+      shadow: false
   - git-revision-date-localized:
       enable_creation_date: true
       type: custom

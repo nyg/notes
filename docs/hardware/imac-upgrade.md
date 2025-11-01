@@ -18,7 +18,10 @@ infamous “vertical lines” issue, with a new one. Then I thought I'd take thi
 opportunity to also upgrade the RAM from 1.5 to 4.5 GB, and replace the 3.5" HDD
 with a 2.5" SSD.
 
-![vertical-lines-screen](../assets/imac/00-vertical-lignes.jpg)
+<figure>
+    <img src="../../assets/imac/00-vertical-lignes.jpg" alt="iMac screen with vertical lines">
+    <figcaption>An iMac with the vertical lines issue</figcaption>
+</figure>
 
 ## Buying new hardware
 
@@ -32,7 +35,10 @@ The RAM module should have the following specs: _4 GB Samsung 2Rx4
 PC2-6400U-666_. After some online digging, I settled for the one in the picture
 below, which I ordered on [eBay][3] for $13:
 
-![ram-module](../assets/imac/00-ram-module.jpg)
+<figure>
+  <img src="../../assets/imac/00-ram-module.jpg" alt="4 GB RAM module">
+  <figcaption>4 GB Samsung 2Rx4 PC2-6400U-666</figcaption>
+</figure>
 
 ### SSD
 
@@ -94,51 +100,76 @@ iMac. Two of them below:
 
 ### Pictures
 
-Before the upgrade: 1.5 GB of RAM and vertical lines everywhere on the screen.
-![screen-vertical-lines](../assets/imac/01-screen-lines.jpg)
+<figure>
+  <img src="../../assets/imac/01-screen-lines.jpg" alt="Screen with vertical lines">
+  <figcaption>Before the upgrade: 1.5 GB of RAM and vertical lines everywhere on the screen.</figcaption>
+</figure>
 
-Inside the iMac, before the hard drive removal…
-![opened-up-hd](../assets/imac/10-opened-up-with-hard-drive.jpg)
+<figure>
+  <img src="../../assets/imac/10-opened-up-with-hard-drive.jpg" alt="Inside the iMac with hard drive">
+  <figcaption>Inside the iMac, before the hard drive removal…</figcaption>
+</figure>
 
-… and after.
-![opened-up-without-hd](../assets/imac/20-opened-up-without-hard-drive.jpg)
+<figure>
+  <img src="../../assets/imac/20-opened-up-without-hard-drive.jpg" alt="Inside the iMac without hard drive">
+  <figcaption>… and after.</figcaption>
+</figure>
 
-Overview.
-![overview](../assets/imac/30-opened-up-overview.jpg)
+<figure>
+  <img src="../../assets/imac/30-opened-up-overview.jpg" alt="Overview of opened iMac">
+  <figcaption>Overview.</figcaption>
+</figure>
 
-The front and back of the original screen.
-![front-old-screen](../assets/imac/35-old-screen.jpg)
-![back-old-screen](../assets/imac/36-old-screen-back.jpg)
+<figure>
+  <img src="../../assets/imac/35-old-screen.jpg" alt="Front of original screen">
+  <figcaption>The front of the original screen.</figcaption>
+</figure>
 
-The new screen, notice the absence of the metallic structure and cables that are
-still on the old screen.
-![front-new-screen](../assets/imac/40-new-screen.jpg)
-![back-new-screen](../assets/imac/45-new-screen-back.jpg)
+<figure>
+  <img src="../../../assets/imac/36-old-screen-back.jpg" alt="Back of original screen">
+  <figcaption>The back of the original screen.</figcaption>
+</figure>
 
-Some close ups of the original screen.
-![screen-details-0](../assets/imac/50-screen-details.jpg)
-![screen-details-1](../assets/imac/51-screen-details.jpg)
-![screen-details-2](../assets/imac/52-screen-details.jpg)
-![screen-details-4](../assets/imac/54-screen-details.jpg)
-![screen-details-5](../assets/imac/55-screen-details.jpg)
-![screen-details-6](../assets/imac/56-screen-details.jpg)
+<figure>
+  <img src="../../assets/imac/40-new-screen.jpg" alt="Front of new screen">
+  <img src="../../assets/imac/45-new-screen-back.jpg" alt="Back of new screen">
+  <figcaption>The new screen, notice the absence of the metallic structure and cables that are still on the old screen.</figcaption>
+</figure>
 
-The new screen with the metallic structure and cables around it.
-![new-screen-before-assembly](../assets/imac/60-new-screen-before-assembly.jpg)
+<figure>
+  <img src="../../assets/imac/50-screen-details.jpg" alt="Close-up details of original screen">
+  <img src="../../assets/imac/51-screen-details.jpg" alt="Close-up details of original screen">
+  <img src="../../assets/imac/52-screen-details.jpg" alt="Close-up details of original screen">
+  <img src="../../assets/imac/54-screen-details.jpg" alt="Close-up details of original screen">
+  <img src="../../assets/imac/55-screen-details.jpg" alt="Close-up details of original screen">
+  <img src="../../assets/imac/56-screen-details.jpg" alt="Close-up details of original screen">
+  <figcaption>Some close ups of the original screen.</figcaption>
+</figure>
 
-After the structure has been screwed in. Tape everything.
-![new-screen-after-assembly](../assets/imac/62-new-screen-assembly.jpg)
+<figure>
+  <img src="../../assets/imac/60-new-screen-before-assembly.jpg" alt="New screen with metallic structure and cables">
+  <figcaption>The new screen with the metallic structure and cables around it.</figcaption>
+</figure>
 
-The EMI shield was also moved from the original screen to the new one (the black
-one, as well as the silver ones on the sides).
-![new-screen-assembly-front](../assets/imac/63-new-screen-assembly-front.jpg)
+<figure>
+  <img src="../../assets/imac/62-new-screen-assembly.jpg" alt="New screen after structure has been screwed in">
+  <figcaption>After the structure has been screwed in. Tape everything.</figcaption>
+</figure>
 
-Is it really working?! Time to install Mac OS X on the SSD. This was quite a
-pain, as my optical drive worked only about 10% of the time.
-![reinstall](../assets/imac/80-reinstall.jpg)
+<figure>
+  <img src="../../assets/imac/63-new-screen-assembly-front.jpg" alt="Front view of new screen assembly with EMI shield">
+  <figcaption>The EMI shield was also moved from the original screen to the new one (the black one, as well as the silver ones on the sides).</figcaption>
+</figure>
 
-500 GB SSD, 4.5 GB of RAM and a new screen!
-![final-specs](../assets/imac/99-final-specs.jpg)
+<figure>
+  <img src="../../assets/imac/80-reinstall.jpg" alt="Mac OS X installation screen">
+  <figcaption>Is it really working?! Time to install Mac OS X on the SSD. This was quite a pain, as my optical drive worked only about 10% of the time.</figcaption>
+</figure>
+
+<figure>
+  <img src="../../assets/imac/99-final-specs.jpg" alt="Final system specifications">
+  <figcaption>500 GB SSD, 4.5 GB of RAM and a new screen!</figcaption>
+</figure>
 
 ## A note on software
 
@@ -160,8 +191,10 @@ won’t load. Alternatives include [TenFourFox][9] (a fork of Firefox) and
 [InterWebPPC][9] (a fork of TenFourFox). Both are discontinued, but
 InterWebPPC’s latest version (from 2023) is a bit more recent.
 
-Browsing the web using InterWebPPC on Tiger
-![interwebppc-tiger](../assets/imac/90-interwebppc.jpg)
+<figure>
+  <img src="../../assets/imac/90-interwebppc.jpg" alt="InterWebPPC browser running on Tiger">
+  <figcaption>Browsing the web using InterWebPPC on Tiger</figcaption>
+</figure>
 
 ### Shuriken and Sorbet Leopard
 
@@ -170,11 +203,15 @@ system performance. [Sorbet Leopard][11] is a modified version of Leopard that
 includes updated certificates, performance tweaks, and other patches. Both were
 created by the same developer but are no longer maintained.
 
-Content of Shuriken
-![shuriken-content](../assets/imac/95-shuriken.jpg)
+<figure>
+  <img src="../../assets/imac/95-shuriken.jpg" alt="Contents of Shuriken">
+  <figcaption>Content of Shuriken</figcaption>
+</figure>
 
-The Sorbet App Store on Sorbet Leopard (the Keychron K3 works on both Tiger and Leopard)
-![sorbet-leopard](../assets/imac/96-sorbet-leopard.jpg)
+<figure>
+  <img src="../../assets/imac/96-sorbet-leopard.jpg" alt="Sorbet App Store running on Sorbet Leopard">
+  <figcaption>The Sorbet App Store on Sorbet Leopard (the Keychron K3 works on both Tiger and Leopard)</figcaption>
+</figure>
 
 ## Conclusion
 
