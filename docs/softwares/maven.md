@@ -2,7 +2,7 @@
 title: Maven
 ---
 
-Notes from the book *Maven: The Definitive Guide*. Additional resource: [git.sr.ht/~nyg/maven-basics](https://git.sr.ht/~nyg/maven-basics).
+Notes from the book *Maven: The Definitive Guide*. Additional resource: [github.com/nyg/maven-basics](https://github.com/nyg/maven-basics).
 
 Maven is known as a "build tool" but it can do more than just building and packaging a project:
 

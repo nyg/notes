@@ -4,7 +4,7 @@ site_author: nyg
 site_description: Technical notes & articles written over the years
 
 repo_name: nyg/notes
-repo_url: https://git.sr.ht/~nyg/notes
+repo_url: https://github.com/nyg/notes
 
 extra_javascript:
   - assets/js/timeago.min.js

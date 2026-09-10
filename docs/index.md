@@ -7,7 +7,7 @@ hide:
 
 On this website, you'll find a collection of computer-science-related notes I've
 accumulated through the years, as well as a few technical articles. My code can
-be found on [GitHub][2] and [SourceHut][1].
+be found on [GitHub][1].
 
 ### Articles
 
@@ -27,5 +27,4 @@ be found on [GitHub][2] and [SourceHut][1].
 * macOS: getting boot time and uptime in [C](https://gist.github.com/nyg/dbdef21a1a0632c389d4d756d4fc1c0d) and in [Swift](https://gist.github.com/nyg/d81308a92fbf7e9c44c5f72db5ee2171)
 
 
-[1]: https://git.sr.ht/~nyg
-[2]: https://github.com/nyg
+[1]: https://github.com/nyg

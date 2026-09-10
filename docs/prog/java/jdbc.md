@@ -2,7 +2,7 @@
 title: JDBC connection
 ---
 
-*Source repository: [git.sr.ht/~nyg/example-java-jdbc](https://git.sr.ht/~nyg/example-java-jdbc)*
+*Source repository: [github.com/nyg/example-jdbc](https://github.com/nyg/example-jdbc)*
 
 There are different ways to obtain a connection to a database in a Java application. We will show some of them below, starting from the most low-level one, up to the most commonly used one.
 

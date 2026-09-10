@@ -2,7 +2,7 @@
 title: Log4j2 ThreadContext
 ---
 
-*Source repository: [git.sr.ht/~nyg/example-java-log4j](https://git.sr.ht/~nyg/example-java-log4j)*
+*Source repository: [github.com/nyg/example-log4j](https://github.com/nyg/example-log4j)*
 
 This proof-of-concept shows how to use a Log4j `Routing` appender to route log events of a service to different files, based on who initially called the service methods, i.e. a JMX call or a Spring scheduler in our case.
 
