@@ -1,0 +1,21 @@
+baseURL = 'https://notes.andstuff.dev/'
+languageCode = 'en'
+title = 'Notes… and stuff!'
+theme = 'ananke'
+
+[permalinks]
+posts = '/:contentbasename/'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+mainSections = ['posts']
+recent_posts_number = 10
+date_format = 'Jan 2, 2006'
+
+[params.ananke]
+show_recent_posts = true
+
+[params.ananke.home]
+content_alignment = 'left'

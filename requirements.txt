@@ -1,5 +1,0 @@
-mkdocs
-mkdocs-git-revision-date-localized-plugin
-mkdocs-material
-mkdocs-material-extensions
-mkdocs-glightbox
