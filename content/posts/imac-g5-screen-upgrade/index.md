@@ -143,6 +143,7 @@ iMac. Two of them below:
   <img src="50-screen-details.jpg" alt="Close-up details of original screen">
   <img src="51-screen-details.jpg" alt="Close-up details of original screen">
   <img src="52-screen-details.jpg" alt="Close-up details of original screen">
+  <img src="53-screen-details.jpg" alt="Close-up details of original screen">
   <img src="54-screen-details.jpg" alt="Close-up details of original screen">
   <img src="55-screen-details.jpg" alt="Close-up details of original screen">
   <img src="56-screen-details.jpg" alt="Close-up details of original screen">
