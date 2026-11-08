@@ -1,7 +1,7 @@
 baseURL = 'https://notes.andstuff.dev/'
 languageCode = 'en'
 title = 'Notes… and stuff!'
-theme = 'ananke'
+theme = 'PaperMod'
 
 [permalinks]
 posts = '/:contentbasename/'
@@ -11,11 +11,31 @@ unsafe = true
 
 [params]
 mainSections = ['posts']
-recent_posts_number = 10
-date_format = 'Jan 2, 2006'
+description = 'Technical articles written over the years'
+author = 'nyg'
+defaultTheme = 'light'
+DateFormat = 'Jan 2, 2006'
+ShowReadingTime = true
+disableSpecial1stPost = true
+ShowCodeCopyButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+showtoc = true
+TocOpen = false
 
-[params.ananke]
-show_recent_posts = true
+[params.assets]
+theme_color = '#0a0a0a'
 
-[params.ananke.home]
-content_alignment = 'left'
+[[params.socialIcons]]
+name = 'github'
+url = 'https://github.com/nyg'
+
+[[menu.main]]
+name = 'Tags'
+url = '/tags/'
+weight = 10
+
+[[menu.main]]
+name = 'GitHub'
+url = 'https://github.com/nyg/notes'
+weight = 20
