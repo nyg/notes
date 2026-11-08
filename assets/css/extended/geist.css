@@ -1,0 +1,149 @@
+:root {
+    --main-width: 760px;
+    --radius: 6px;
+    --theme: #ffffff;
+    --entry: #ffffff;
+    --primary: #0a0a0a;
+    --secondary: #737373;
+    --tertiary: #e5e5e5;
+    --content: #171717;
+    --code-block-bg: #0a0a0a;
+    --code-bg: #f5f5f5;
+    --border: #e5e5e5;
+    --accent: #4f46e5;
+    --header-bg: #0a0a0a;
+    --header-fg: #fafafa;
+}
+
+:root[data-theme="dark"] {
+    --theme: #0a0a0a;
+    --entry: #141414;
+    --primary: #ededed;
+    --secondary: #a3a3a3;
+    --tertiary: #262626;
+    --content: #d4d4d4;
+    --code-block-bg: #171717;
+    --code-bg: #1f1f1f;
+    --border: #262626;
+    --accent: #818cf8;
+}
+
+body {
+    font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+    font-size: 17px;
+}
+
+code,
+pre,
+kbd,
+.post-meta,
+.post-tags a,
+.terms-tags a,
+.toc summary,
+.paginav .title {
+    font-family: "Geist Mono", ui-monospace, monospace;
+}
+
+.header {
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.header a,
+.header button,
+.nav-sep {
+    color: var(--header-fg);
+}
+
+.logo a {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.02em;
+}
+
+#menu a {
+    font-size: 15px;
+    opacity: .75;
+}
+
+#menu a:hover,
+#menu .active {
+    opacity: 1;
+    border-bottom-color: var(--accent);
+}
+
+.post-title,
+.entry-header h2,
+.page-header h1,
+.md-content h1,
+.md-content h2,
+.md-content h3 {
+    font-weight: 600;
+    letter-spacing: -.025em;
+}
+
+.post-title {
+    font-size: 36px;
+}
+
+.post-meta,
+.post-tags a,
+.terms-tags a {
+    font-size: 13px;
+}
+
+.post-entry {
+    border: 1px solid var(--border);
+    box-shadow: none;
+    transition: border-color .15s;
+}
+
+.post-entry:hover {
+    border-color: var(--accent);
+}
+
+.post-content a,
+.md-content a,
+.toc a:hover {
+    color: var(--accent);
+    box-shadow: none;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+    text-underline-offset: 3px;
+}
+
+.post-content a:hover,
+.md-content a:hover {
+    text-decoration-color: var(--accent);
+}
+
+.post-content :not(pre) > code {
+    border: 1px solid var(--border);
+    font-size: .85em;
+    padding: .15em .35em;
+}
+
+.post-content pre code {
+    font-size: 14px;
+}
+
+.post-tags a:hover,
+.terms-tags a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--theme);
+}
+
+::selection {
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.list,
+[data-theme="dark"] .list {
+    background: var(--theme);
+}
+
+.list .post-content {
+    color: var(--secondary);
+    margin-bottom: 32px;
+}
