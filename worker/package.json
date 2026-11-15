@@ -7,9 +7,12 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "tail": "wrangler tail"
+    "tail": "wrangler tail",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@nyg/eslint-config": "github:nyg/eslint-config#v1.0.1",
+    "eslint": "10.14.0",
     "wrangler": "4.158.0"
   }
 }
