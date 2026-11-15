@@ -14,6 +14,6 @@ Hugo blog published at https://notes.andstuff.dev, with the PaperMod theme as a 
 
 ## Analytics
 
-- `static/count.js` is an unmodified copy of GoatCounter's `count.v4.js`. Replace it with a newer upstream copy, never edit it.
+- `static/count.js` is an unmodified copy of one of GoatCounter's numbered `count.vN.js` files. The `Update GoatCounter script` workflow opens a pull request with the newest one every month; never edit it.
 - `extend_head.html` loads it in production builds only, points it at the Worker's `/hit` endpoint, and swaps `sendBeacon` for `fetch` because blockers drop third-party beacons.
 - The Worker accepts only `POST /hit` from `ALLOWED_ORIGIN` and forwards the hit with the visitor's IP, user agent and language. `GOATCOUNTER_TOKEN` is a Wrangler secret (`worker/.dev.vars` locally), never committed. Deploying the Worker is a manual `pnpm run deploy` in `worker/`; site deploys do not touch it.
