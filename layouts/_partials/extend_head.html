@@ -6,6 +6,10 @@
     return true
   }
 </script>
+{{ if eq .Kind "404" }}
+{{/* count.js takes the path from the canonical link, which is /404.html here, so report the requested path instead. */}}
+<script>window.goatcounter = { path: function () { return '/404' + location.pathname } }</script>
+{{ end }}
 <script data-goatcounter="https://nyg-notes.cloudflare-mmdif.workers.dev/hit" async src="/count.js"></script>
 {{ end }}
 <link rel="preconnect" href="https://fonts.googleapis.com">
